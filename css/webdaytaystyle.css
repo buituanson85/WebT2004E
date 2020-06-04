@@ -1,0 +1,140 @@
+body {
+    /*thẻ body định nghĩa cho cả trang */
+    font-family: Tahoma;    /*font chữ cả trang */
+    font-size: 13px;        /* size chữ cả trang */
+    width: 1000px;          /* chiều rộng trang */
+    margin: 0px auto;       /* căn giữa nội dung của chữ trang */
+}
+/* */
+/* định nghĩa các thẻ khác trong trang đi từ ngoài vào --> trên xuống dưới */
+#menu_top {
+    background: #141414;  /* màu phông nền */
+    height: 40px;  /* chiều cao thẻ div*/
+}
+
+#bennar {    /* đặt tạm màu để xác định khối cho div */
+    /*background: red;*/   /* sau khi hoàn thành banner xóa phông */
+    height: auto;
+    width: 1000px;
+}
+
+#main #left {   /* định nghĩa left nằm trong main */
+    width: 700px;
+    /*background: #ccc;*/
+    min-height: 400px; /* chiều cao tối thiểu */
+    float: left;  /* cố định phần tử bên trái */
+}
+
+#main #right {
+    width: 300px;
+    /*background: blue;*/
+    min-height: 400px;
+    float: left;
+}
+
+#footer {
+    background: #000000;
+    width: 1000px;
+    text-align: center; /* căn chữ ra giữa */
+    height: 60px;
+    color: #FFF; /* màu chữ */
+    clear: left;    /* do 2 thẻ phía trên tại thẻ main left và right dùng float left để tránh chàn lên --> dùng thuộc tính clear left  */
+    line-height: 60px;/* thuộc tính chữ quy định khoảng cách của các dòng đặt bằng chiều cao của footer để chữ ở giữa */
+}
+<!-- -->
+#menu_top ul {
+    margin: 0px;    /* ul mới tạo bao giờ cũng có khoảng margin và padding nhất định do đó cần phải reset về 0 */
+    padding: 0px;
+}
+
+#menu_top ul li {
+    list-style: none;   /* ẩn icon */
+    float: left;
+}
+
+#menu_top ul li a {
+    text-decoration: none;    /* Loại bỏ gạch chân */
+    display: block;  /*thẻ a thuộc kiểu inline để thay đổi kích thước cùng một lúc toàn bộ menu ta dùng block block toàn bộ khối meni lại */
+    height: 40px;
+    line-height: 40px;
+    color: #FFF;
+    /* dùng padding để cho thẻ a giãn ra 4 phía */
+    padding-top: 0px;   /* trên */
+    padding-right: 20px;  /* phải */
+    padding-bottom: 0px;  /* dưới */
+    padding-left: 20px;   /* trái */
+    border-right: 1px solid #ccc;  /* tạo dòng kẻ dọc ngăn các menu tính từ phải sang */
+}
+
+#menu_top ul li a.active {   /* đối với các thẻ có class là active... */
+    background: #1949b5;
+}
+
+#bennar img {
+    width: 1000px;
+}
+
+#main #left ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main #left ul li {
+    list-style: none;
+    clear: left;
+    border-bottom: 2px solid #cccccc;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#main #left ul li img {
+    float: left;
+    margin-right: 10px;  /* khoảng cách giữa chữ và ảnh về bên trái */
+}
+
+#main #left ul li h2 {
+    font-size: 16px;
+    margin-top: 0px;
+}
+#main #left ul li p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#main {
+    margin-top: 10px;
+}
+
+#main #right .menu_right ul {
+    margin: -17px 0px 0px 0px;  /*đẩy khung gần về phía thanh menu */
+    padding: 0px;
+    border: 1px solid #ccc;  /*Tạo khung */
+}
+
+#main #right .menu_right ul li {
+    list-style: none;
+}
+
+#main #right .menu_right ul li a{
+    display: block;
+    text-decoration: none;
+    line-height: 35px;
+    border-bottom: 1px solid #cccc;
+    text-indent: 20px;
+    color: #848484;
+    font-size: 14px;
+}
+
+#main #right .menu_right ul li a:hover {
+    color: red;
+}
+#main #right .menu_right h3 {
+    background: #194d58  url(../imgs/iconmenu.png) no-repeat 3px; /* link anh css và bỏ nhân */
+    height: 40px;
+    margin-top: 0px;
+    /*text-align: center;    /* cho chữ vào giữa ô */
+    font-size: 18px;
+    line-height: 40px;
+    color: #FFF;
+    text-indent: 35px;  /* thuộc tính thụt vào đầu dòng 15px*/
+}
