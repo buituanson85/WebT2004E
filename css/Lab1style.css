@@ -1,0 +1,23 @@
+body{
+    height: 1000px;
+    background-color: #FFFFFF;
+    font-family: .VnArial;
+    margin-left: 500px;
+    margin-top: 50px;
+}
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+}
+p{
+    font-size: 16px;
+    word-spacing: 1.5px;
+
+}
+p2 {
+    font-style: italic;
+    font-size: 12px;
+}
