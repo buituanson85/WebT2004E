@@ -1,7 +1,7 @@
 body{
-    font-family: Tahoma;
     width: 800px;
     margin: 0px auto;
+    font-family: "Be Vietnam";
 }
 #banner_top #left {
     /*background: #1949b5;*/
@@ -13,6 +13,9 @@ body{
     float: left;
 }
 
+#banner_top #right address {
+    word-spacing: 1.5px;
+}
 #banner_top #right {
     /*background: red;*/
     width: 350px;;
@@ -26,6 +29,7 @@ body{
 #banner_top #right a:link{
     color: black;
     text-decoration: none;
+    word-spacing: 1.5px;
 }
 
 #main {
@@ -50,20 +54,22 @@ body{
     border-top-style: dashed;
     border-top-color: #d3009e;
     line-height: 20px;
+
 }
 
 #main ul li h4{
     font-size: 18px;
     color: #d3009e;
     font-weight: 800;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 #main ul li p{
     font-size: 14px;
     font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    word-spacing: 1px;
 }
 
 #main ul li p b{
@@ -78,4 +84,8 @@ body{
     font-size: 14px;
     font-weight: 300;
     margin-top: 20px;
+}
+
+#footer blockquote {
+    word-spacing: 1px;
 }
