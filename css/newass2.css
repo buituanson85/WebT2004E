@@ -1,0 +1,107 @@
+body {
+    font-family: "Be Vietnam";
+    margin: auto;     /*căn toàn bộ trang vào giữa màn mình*/
+    width: 900px; /*chiều rộng trang*/
+    word-spacing: 1.5px;  /* khoảng cách các từ*/
+}
+
+.header {
+    margin: 0px;  /*loại bỏ margin và padding mặc định*/
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+.header_left {
+    background-image: url("../imgs/newass2.png"); /*link ảnh vào css*/
+    background-repeat: no-repeat; /*ko nhân*/
+    background-position: center; /*cho ảnh vào giữa màn hình*/
+    background-size: 65% 100%;  /*điều chỉnh kích thướng ảnh*/
+    float: left;          /*tạo bố cục layout*/
+    min-height: 160px;/*chiều dài tối thiểu layout*/
+    width: 250px;  /*chiều rộng layout*/
+    margin-top: 40px;
+}
+
+.header_right {
+    float: left;   /*tạo bố cục layout*/
+    width: 650px;  /*chiều rộng layout*/
+    text-align: right; /**/ /*căn dòng chữ theo phía phải*/
+    font-size: 14px;  /*font size 14*/
+    min-height: 160px;
+    margin-top: 60px;
+}
+
+.header_right h4 {
+    margin-bottom: 5px;
+}
+.header_right a {
+    color: black;
+    text-decoration: none;
+}
+.main {
+    margin: 0px;
+    padding: 0px;
+    min-height: 500px;
+    clear: left;  /*chống chàn*/
+}
+
+.fooder {
+    margin: 0px;
+    padding: 0px;
+    min-height: 300px;
+    font-size: 14px;
+}
+
+.menu {
+    padding: 0px;
+    margin: 0px;
+    display: block;  /*gom toàn bộ li trong ul thành một khối block*/
+    list-style: none; /* bỏ dấu chấm trong li*/
+}
+.menu li {
+    border-top-style: dashed; /*tạo kiểu gạch trên*/
+    border-top-color: #d3009e; /*tạo màu boder*/
+}
+
+.menu li h4 {l
+     font-size: 18px;
+     color: #d3009e;
+     margin-top: 5px;  /* căn trên*/
+     margin-bottom: 10px; /* căn dưới*/
+     font-weight: 600;  /* độ đậm nét chữ*/
+}
+
+.menu li p {
+     font-size: 14px;
+     font-weight: 400;
+    line-height: 1.5;
+}
+
+.menu_three p {
+    margin-left: 20px;
+}
+
+.menu_four p {
+    margin-left: 20px;
+}
+
+.menu_five p {
+    margin-left: 20px;
+}
+
+.menu_six p {
+     text-align: left;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.fooder blockquote {
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+

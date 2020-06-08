@@ -1,0 +1,56 @@
+body {
+  font-family: "Be Vietnam";
+    width: 800px;
+    margin: 0px auto;
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+    background: thistle;
+    height: 150px;
+}
+.name {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 130px;
+    margin-left: 250px;
+}
+.job {
+    background: papayawhip;
+    font-size: 18px;
+    width: 380px;
+    height: 20px;
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 335px;
+}
+
+.nav {
+    background: papayawhip;
+    height: 150px;
+}
+ .nav_img {
+   float: left;
+     margin-top: -50px;
+     margin-left: 50px;
+     width: 200px;
+ }
+
+ .nav_gt{
+     font-size: 14px;
+
+ }
+.menu_left {
+    background: #d3009e;
+    width: 550px;
+    float: left;
+    min-height: 300px;
+}
+
+.menu_right {
+    background: brown;
+    width: 250px;
+    float: left;
+    min-height: 300px;
+}

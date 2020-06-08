@@ -1,0 +1,52 @@
+body{
+    font-family: "Be Vietnam";
+    width: 1000px;   /* chiều rộng toàn bộ trang*/
+    margin: 0px auto;  /* chuyển trang vào giữa màn hình*/
+}
+
+#header {
+    margin: 0px;
+    padding: 0px;
+    background: blueviolet;
+    height: 150px;
+}
+
+#header #name {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    margin-left: 200px;
+}
+
+#header #nghe_nghiep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-left: 150px;
+}
+#nav {
+    background: pink;
+    height: 150px;
+}
+
+#main {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main #left {
+    background: aqua;
+    float: left;
+    width: 700px;
+    min-height: 500px;
+}
+
+#main #right {
+    background: chartreuse;
+    float: left;
+    width: 300px;
+    min-height: 500px;
+}
