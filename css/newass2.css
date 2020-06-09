@@ -12,19 +12,20 @@ body {
 }
 
 .header_left {
-    background-image: url("../imgs/newass21.png"); /*link ảnh vào css*/
-    background-repeat: no-repeat; /*ko nhân*/
-    background-position: center; /*cho ảnh vào giữa màn hình*/
-    background-size: 65% 100%;  /*điều chỉnh kích thướng ảnh*/
-    float: left;          /*tạo bố cục layout*/
+    /*background-image: url("../imgs/newass21.png"); /*link ảnh vào css*/
+    /*background-repeat: no-repeat; /*ko nhân*/
+    /*background-position: center; /*cho ảnh vào giữa màn hình*/
+    /*background-size: 65% 100%;  /*điều chỉnh kích thướng ảnh*/
     min-height: 160px;/*chiều dài tối thiểu layout*/
     width: 250px;  /*chiều rộng layout*/
-    margin-top: 40px;
+    margin-top: 50px;
+    margin-left: 30px;
+    float: left;          /*tạo bố cục layout*/
 }
 
 .header_right {
     float: left;   /*tạo bố cục layout*/
-    width: 650px;  /*chiều rộng layout*/
+    width: 620px;  /*chiều rộng layout*/
     text-align: right; /**/ /*căn dòng chữ theo phía phải*/
     font-size: 14px;  /*font size 14*/
     min-height: 160px;
