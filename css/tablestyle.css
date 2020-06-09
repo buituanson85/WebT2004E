@@ -1,0 +1,40 @@
+body{
+    font-family: "Be Vietnam";
+    width: 900px;
+    margin: auto;
+}
+/*Để tạo một khoảng ô nhiều hơn một cột, hãy sử dụng thuộc tính colspan:
+Để tạo một khoảng ô nhiều hơn một hang, hãy sử dụng thuộc tính rowspan:
+*/
+.menu {
+    width: 100%;
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse; /*Nhập các dòng boder vào thành khung có 1 dòng kẻ*/
+    /*border-spacing: 5px;*/  /*or tạo khoảng cách các dòng boder 2 khung song song*/
+}
+
+.menu_1 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+th,td {
+    padding: 15px;  /*thêm bộ đềm trong các ô bảng*/
+    text-align: center;
+}
+
+.tr_1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.td_1 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+td {
+    font-size: 18px;
+}
