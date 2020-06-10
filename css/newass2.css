@@ -1,10 +1,10 @@
 body {
     font-family: "Be Vietnam";
     margin: auto;     /*căn toàn bộ trang vào giữa màn mình*/
-    width: 900px; /*chiều rộng trang*/
-    word-spacing: 1.5px;  /* khoảng cách các từ*/
+    width: 900px; /*chi
+ều rộng trang*/
+word-spacing: 1.5px;  /* khoảng cách các từ*/
 }
-
 .header {
     margin: 0px;  /*loại bỏ margin và padding mặc định*/
     padding: 0px;
@@ -75,7 +75,6 @@ body {
 .menu li p {
      font-size: 14px;
      font-weight: 400;
-    line-height: 1.5;
 }
 
 .menu_three p {
@@ -91,7 +90,7 @@ body {
 }
 
 .menu_six p {
-     text-align: left;
+    text-align: left;
     margin-bottom: 15px;
     margin-top: -5px;
 }

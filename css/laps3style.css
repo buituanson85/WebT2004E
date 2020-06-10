@@ -1,0 +1,65 @@
+body{
+    font-family: "Be Vietnam";
+    width: 1200px;
+    margin: auto;
+
+}
+
+span {
+    font-size: 36px;
+    font-weight: 700px;
+}
+
+div .s1 {
+    background-color: #cccccc;
+}
+.img_1 {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 15%;
+    height: 200px;
+    background-image: url("../imgs/lap3s1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu_1 {
+    float: left;
+    width: 60%;
+    height: 200px;
+    margin-left: 5%;
+}
+
+.menu_1 h3 {
+    font-size: 18px;
+    font-weight: 500px;
+    color: coral;
+}
+.menu_1 p {
+    font-size: 14px;
+}
+.menu_1 span {
+    font-size: 14px;
+}
+.right_1 {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 20%;
+    height: 200px;
+}
+
+.bottom_1 {
+    border-left: 1px solid coral;
+    color: coral;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.view{
+    font-size: 24px;
+    color: coral;
+    border: 1px solid coral;
+    padding: 5px 10px 5px 10px;
+}
