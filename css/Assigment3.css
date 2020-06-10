@@ -1,0 +1,60 @@
+body{
+    font-family: "Be Vietnam";
+    margin: auto;
+    width: 1200px;
+    background-color: #cccccc;
+}
+
+.class {
+    margin: 0px;
+    padding: 0px;
+    height: 1000px;
+    box-sizing: border-box;
+}
+
+.class_left {
+    float: left;
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.class_left_1 {
+    box-sizing: border-box;
+    background-color: red;
+    margin: 0px 30px 0px 40px;
+    height: 20%;
+    font-size: 22px;
+    font-weight: 500px;
+}
+.class_left_2 {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin: 30px 30px 0px 40px;
+    height: 30%;
+}
+.class_left_3 {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin: 30px 30px 0px 40px;
+    height: 50%;
+}
+
+.class_right {
+    box-sizing: border-box;
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+.class_right_1 {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin: 0px 30px 30px 0px;
+    height: 45%;
+}
+.class_right_2 {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin: 30px 30px 0px 0px;
+    height: 55%;
+}
