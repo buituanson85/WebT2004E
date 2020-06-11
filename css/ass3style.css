@@ -3,6 +3,7 @@ body {
     margin: auto;
     width: 1200px;
     background-color: #cccccc;
+    word-spacing: 1.5;
 }
 
 .class {
@@ -20,20 +21,19 @@ body {
 }
 .class_left_1 {
     box-sizing: border-box;
-    background-color: red;
     margin: 0px 30px 0px 40px;
     height: 20%;
+    background-color: #ee4b4b;
     font-size: 22px;
     font-weight: 500px;
-    opacity: 0.3;
-    z-index: 7;
+    z-index: 9;
 }
-.img {
-    background-image: url("../imgs/bennar.png");
-    position: absolute;
-    top: 0px;
-    left: 0px;
+.class_left_1 img {
+    position: fixed;
+    top: -70px;
+    left: 600px;
     z-index: 10;
+    opacity: 0.4;
 }
 .class_left_2 {
     box-sizing: border-box;
@@ -93,6 +93,7 @@ body {
     margin: 50px 0px 0px 40px;
     font-size: 16px;
     font-weight: 400;
+
 }
 .class_left_3_4 {
     width: 120px;

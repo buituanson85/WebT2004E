@@ -2,6 +2,7 @@ body{
     font-family: "Be Vietnam";
     margin: auto;
     width: 1200px;
+    word-spacing: 1.5px;
 }
 
 .header {
@@ -109,10 +110,10 @@ body{
     color: #FFFFFF;
     font-size: 20px;
     transform: rotate(45deg); /*xoay chữ 45độ*/
-    font-weight: 600px;
+    font-weight: bolder;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 5px;
 }
 
 .main_2 {
@@ -280,10 +281,10 @@ body{
     color: #FFFFFF;
     font-size: 20px;
     transform: rotate(45deg); /*xoay chữ 45độ*/
-    font-weight: 600px;
+    font-weight: bolder;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 5px;
 }
 
 .main_4 {
