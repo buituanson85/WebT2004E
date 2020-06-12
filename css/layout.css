@@ -1,0 +1,104 @@
+*{
+    /* * tất cả các style trong html đều chịu ảnh hưởng*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "Be Vietnam";
+    color: #33333;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;  /*can chỉnh ảnh*/
+}
+
+.header,.main,.fooder{
+    float: left;
+    width: 100%;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header_left{
+    float: left;
+    width: 20%;
+}
+.header_right{
+    float: right;
+    width: 60%;
+}
+.content{
+    float: left;
+    width: 66.67%;
+}
+.sidebar{
+    float: right;
+    width: 33.33%;
+}
+.header{
+    padding: 20px 0;
+    background-color: #FFFFFF;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: #333333;
+}
+.menu li{
+    float: right;
+    margin-left: 35px;
+    padding: 10px 0;
+}
+.menu li:first-child{
+    list-style: none;  /*first-child vị trí đầu tiên trong menu*/
+}
+.menu li a {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #333333;
+    font-weight: 600;
+}
+.content_1{
+    width: 100%;
+    min-height: 200px;
+    background-color: #d53e05;
+    margin: 20px 15px 15px 20px;
+    color: #FFFFFF;
+}
+.content_2{
+    width: 100%;
+    min-height: 300px;
+    background-color: #FFFFFF;
+    margin: 20px 15px 15px 20px;
+}
+.content_3{
+    width: 100%;
+    min-height: 400px;
+    background-color: #FFFFFF;
+    margin: 20px 15px 15px 20px;
+}
+.sidebar_1{
+    width: 100%;
+    min-height: 450px;
+    background-color: #FFFFFF;
+    margin: 20px 20px 15px 45px;
+}
+.sidebar_2 {
+    width: 100%;
+    min-height: 450px;
+    background-color: #FFFFFF;
+    margin: 20px 20px 15px 45px;
+}

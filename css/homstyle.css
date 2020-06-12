@@ -1,4 +1,47 @@
-body{
-    font-family: Arial;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
     font-size: 14px;
+    font-family: "Be Vietnam";
+    color: #33333;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    position: relative;
+    width: 1200px;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+img{
+    max-width: 100%;
+}
+
+.content{
+
+    width: 100%;
+}
+
+.content_left{
+    float: left;
+    background-color: #1949b5;
+    width: 33.33%;
+    min-height: 300px;
+    padding-left: 30px;
+}
+.content_center{
+    float: left;
+    background-color: #cccccc;
+    width: 33.34%;
+    min-height: 300px;
+}
+.content_Right{
+    float: left;
+    background-color: #efbdab;
+    min-height: 300px;
+    width: 33.33%;
 }
