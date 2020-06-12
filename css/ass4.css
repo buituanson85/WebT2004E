@@ -103,19 +103,20 @@ img{
     background-color: #FFFFFF;
 }
 .fooder_left{
-    width: 70%;
+    width: 60%;
     float: left;
     min-height: 300px;
     font-size: 18px;
     line-height: 1.5;
     margin-top: 70px;
-    border-right: 1px solid;
+    border-right: 1px solid lavender;
 }
 .fooder_left span{
 margin-bottom: 15px;
 }
+
 .fooder_right{
-    width: 30%;
+    width: 40%;
     float: right;
     min-height: 300px;
 }
@@ -141,17 +142,23 @@ margin-bottom: 15px;
     padding: 15px 0;
 }
 a:hover{
-    color: black;
+    color: red;
+    opacity: revert;
 }
 .header_center {
     padding-top: 20px;
-    margin-left: aclc(10%-20px);
+}
+
+.header_center a{
+    border: 1px solid #96f7e3;
+    padding: 10px 10px 10px 10px;
+    border-radius: 100%;
+    background: #96f7e3;
 }
 
 .header_right {
     text-align: right;
     padding-top: 20px;
-    margin-right: aclc(45%-20px);
 }
 
 .nav_header {
@@ -173,8 +180,7 @@ a:hover{
     opacity: 0.4;
 }
 .nav_content_left:hover {
-    background-color: #cccccc;
-    opacity: 0.5;
+    background-color: #cccccc; : 0.5;
     z-index: 8;
 }
 .nav_content_center:hover {
@@ -333,7 +339,38 @@ a:hover{
     height: 40px;
 }
 /*Het dong mot*/
+.fooder_left span:hover {
+    color: red;
+}
 
+.fooder_right{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
 
+.icon a{
+    border: 1px solid #96f7e3;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20%;
+    background-color: #96f7e3;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.mobie{
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.mobie a{
+    border: 1px solid #96f7e3;
+    padding: 3px 5px 3px 5px;
+    background-color: #ff00ff;
+    color: #FFFFFF;
+}
+.link2{
+    margin-top: 30px;
+    opacity: 0.6;
+}
 
 
