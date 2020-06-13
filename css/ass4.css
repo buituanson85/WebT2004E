@@ -157,10 +157,37 @@ a:hover{
 }
 
 .header_right {
-    text-align: right;
     padding-top: 20px;
 }
+#myInput {
+    background-image: url("../imgs/senen.jpg");
+    background-position: 10px 8px;
+    background-size: 10%;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 70%;
+    font-size: 16px;
+    padding: 12px 15px 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    float: right;
+}
+.join a{
+    font-size: 20px;
+    padding: 2px 15px 2px 15px;
+    border-radius: 20%;
+    background-color: #96f7e3;
+    border: 1px solid #96f7e3;
+    float: right;
+    margin-left: 20px;
+}
 
+.login a{
+    float: right;
+    font-size: 20px;
+    margin-left: 20px;
+}
 .nav_header {
     font-size: 30px;
     text-align: center;
@@ -239,7 +266,7 @@ a:hover{
     position: relative;
     width: 384px;
     margin-left: 24px;
-    padding: 50px;
+    padding: 70px;
     background-color: #FFFFFF;
     transition: transform .3s;
     height: 402px;
@@ -260,22 +287,37 @@ a:hover{
      height: 48px;
 }
 .content_left_header_right{
+    display: block;
     font-size: 20px;
     font-weight: bolder;
     line-height: 48px;
     float: right;
-    width: 65px;
+    width: 75px;
     height: 48px;
     background: #96f7e3;
-    transition: width 2s;
+    transition: width 3s;
     text-align: right;
+    transform: translateZ(0);
+    position: relative;
+}
+.after{
+    position: fixed;
+    top: 0px;
+    left: 10px;
 }
 .content_left_header_right:hover{
-    width: 150px;
+    width: 170px;
 }
+
 .content_left_main{
      width: 384px;
      height: 314px;
+}
+.overflow {
+    white-space: nowrap;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .content_left_fooder{
@@ -372,5 +414,10 @@ a:hover{
     margin-top: 30px;
     opacity: 0.6;
 }
+.content_center_header_right:after {
+
+}
+
+
 
 
