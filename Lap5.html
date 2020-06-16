@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lap5</title>
+    <meta charset="UTF-8">
+    <title>lap5</title>
+    <link rel="stylesheet" type="text/css" href="css/lap5.css">
+    <link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <span>event registrantion from</span>
+            </div>
+            <form method="get" action="#">
+                <div class="name">
+                    <div class="name_left"><span>name</span></div>
+                    <div class="name_center"> <input type="text" class="name_input-text" name="firstname" placeholder=" " required/></div>
+                    <div class="name_right"> <input type="text" class="name_input-text" name="lastday" placeholder=" " required/></div>
+                </div>
+                <div class="name_text">
+                    <div class="name_text_left"><span>first name</span></div>
+                    <div class="name_text_right"><span>last name</span></div>
+                </div>
+                <div class="company">
+                    <div class="company_left"><span>company</span></div>
+                    <div class="company_right"> <input type="text" class="company_right_input" name="company" placeholder=" "/></div>
+                </div>
+                <div class="email">
+                    <div class="email_left"><span>email</span></div>
+                    <div class="email_right"> <input type="email" class="email_right_input" name="email" placeholder="&nbsp example@email.com"/></div>
+                </div>
+                <div class="phone">
+                    <div class="phone_left"><span>phone</span></div>
+                    <div class="phone_center"> <input type="number" class="phone_center_input" name="areacode" placeholder=" "/></div>
+                    <div class="phone_right"> <input type="number" class="phone_right_input" name="phonenumber" placeholder=" "/></div>
+                </div>
+                <div class="phone_text">
+                    <div class="phone_text_left"><span>area code</span></div>
+                    <div class="phone_text_right"><span>phone number</span></div>
+                </div>
+                <div class="subject">
+                    <div class="subject_left"><span>subject</span></div>
+                    <select class="subject_right" name="faculty">
+                        <option class="subject_right_text" value="monhoc">&nbsp Choose Option</option>
+                        <option class="subject_right_text" value="toan">Toán</option>
+                        <option class="subject_right_text" value="ly">Lý</option>
+                        <option class="subject_right_text" value="cntt">Công nghệ thông tin</option>
+                        <option class="subject_right_text" value="dientu">Điện tử</option>
+                        <option class="subject_right_text" value="hoa">hóa</option>
+                        <option class="subject_right_text" value="su">sử</option>
+                        <option  class="subject_right_text"value="dia">địa</option>
+                        <option class="subject_right_text" value="gdcd">giáo dục công dân</option>
+                        <option class="subject_right_text" value="tienganh">tiếng anh</option>
+                    </select>
+                </div>
+                <div class="radio">
+                    <span class="radio_span">Are you an existing customer?</span><br>
+                    <label class="radio_span_lable_left"><input type="radio" name="sex" value="yes"/>&nbspyes</label>            <!--lựa chọn muốn chuyển cho nhau phải chùng tên "sex"-->
+                    <label class="radio_span_lable_right"><input type="radio" name="sex" value="no"/>&nbspno</label>
+                </div>
+                <div class="register"><button class="register_button" type="submit">register</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
