@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="css/buoi5.css"/>
+</head>
+<body>
+
+    <form method="get" action="#">       <!--get:phương thức lắng nghe,action nơi lắng nghe-->
+        <input type="text" class="input-text" name="username" placeholder="Username.." required/> <br>  <br>  <!---->
+        <input type="email" class="input-text" name="email" aria-placeholder="Mainl..." required/><br><br>
+        <input type="password" class="input-text" name="user_password" placeholder="Passworld.." required/><br><br>
+
+        <label><input type="checkbox" name="ready" />I'm readry.</label> <br>  <br>    <!--lable nhãn-->
+        <label><input type="radio" name="sex" value="male"/>Male</label><br>              <!--lựa chọn muốn chuyển cho nhau phải chùng tên "sex"-->
+        <label><input type="radio" name="sex" value="female"/>Female</label><br>
+        <label><input type="radio" name="sex" value="orher"/>Other</label><br>
+
+        <input type="text" class="input-text" name="birhday" placeholder="Ngày sinh"/> <br><br>
+        <input type="month" class="input-text" name="birhday" placeholder="tháng sinh"/> <br><br>
+        <input type="date" class="input-text" name="birhday" placeholder="Ngày sinh"/> <br><br>
+        <input type="time" class="input-text" name="birhday" placeholder="giờ sinh"/> <br><br>
+
+        <input type="color" name="mycoler" placeholder="Coler...">  <br><br>
+        <input type="number" name="money" placeholder="Money...">  <br><br>
+        <input type="file" name="money" placeholder="Money...">  <br><br>
+        <input type="range" name="avatar"  placeholder="Avarta...">  <br><br>
+
+        <input type="hidden" name="_token" value="server_token"/>   <!--giấu mã code người dùng-->
+
+        <button type="submit">submit</button><br><br>
+        <button type="reset">Reset</button><br><br>
+        <button type="button">Button</button> <br>  <br>    <!--giống span-->
+
+        <select name="faculty" multiple>                                   <!--lựa chọn nhiều sp-->
+            <option value="toan">Toán</option>
+            <option value="dientu">Điện tử</option>
+            <option value="cntt">Công nghệ thông tin</option>
+        </select><br><br>
+
+        <textarea name="tieusubanthan"  rows="5" cols="100" placeholder="Tiểu sử bản thân..."></textarea>
+    </form>
+
+  <!-- <h1>Danh sách sinh viên</h1>
+  <table>
+    <thead>
+          <th>MSSV</th>
+          <th>Tên</th>
+          <th>Emall</th>
+          <th>Ngày Sinh</th>
+          <th>Lớp học</th>
+    </thead>
+    <tbody>
+          <tr>
+              <td>001</td>
+              <td>Nguyễn Tuấn anh</td>
+              <td>anhnt@gmail.com</td>
+              <td>31/12/1999</td>
+              <td>T2004E</td>
+          </tr>
+          <tr>
+              <td>002</td>
+              <td colspan="2">Nguyễn Tuấn Em</td>  2 ô-->
+    <!-- <td>anhnt@gmail.com</td>
+     <td>31/12/1999</td>
+     <td>T2004E</td>
+ </tr>
+</tbody>
+<tfoot>
+  <p>có tất cả 10 sinh viên</p>
+</tfoot>
+</table> -->
+</body>
+</html>

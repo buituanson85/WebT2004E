@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    word-spacing: 1.5px;
+    letter-spacing: 1.5px;
+    font-family: "GothamPro, sans-serif";
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+}
+img{
+    max-width: 100%;
+}
+.container {
+    border-top: 1px #262626;
+    border-bottom: 1px #262626;
+    width: 100%;
+    padding: 85px 22px;
+    display: flex;   /*tuong tu float*/
+    flex-direction: row; /*display theo chieu ngang*/
+    justify-content: center; /*tao khoi ve phia giua man hinh*/
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #171717;
+}
+.container div{
+    border: 1px solid #FFFFFF;
+}
+.container_left{
+    padding: 20px 0;
+}
+.container_center{
+    padding: 20px 0;
+    margin: 0 22px 0 22px;
+}
+.container_right{
+    padding: 20px 0;
+}
+.container_left_link_left{
+    position: relative;
+    width: 100%;
+    padding: 22px 20px;
+    overflow-x: hidden; /*nếu chữ ra khỏi layout sẽ ẩn*/
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.container_left_link_left_span{
+    color: #171717;
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: 0%;
+    height: 100%;
+    background-color: #171717;
+    opacity: 0.1;
+    transition-property: width;
+    transition-duration: 0.3s;*/
+}
+.container_left_link_left_span:hover{
+    width: 100%;
+}
+.container_left_link_center{
+    background-color: #171717;
+    position: relative;
+    width: 100%;
+    padding: 22px 60px;
+    overflow-x: hidden; /*nếu chữ ra khỏi layout sẽ ẩn*/
+    border: 1px solid #FFFFFF;
+}
+.container_left_link_center_span{
+    color: #FFFFFF;
+}
+.container_left_link_right{
+    background-color:#171717;
+    position: relative;
+    width: 100%;
+    padding: 22px 60px;
+    overflow-x: hidden; /*nếu chữ ra khỏi layout sẽ ẩn*/
+    border: 1px solid #FFFFFF;
+}
+.container_left_link_right_span{
+    color: #FFFFFF;
+}
+
