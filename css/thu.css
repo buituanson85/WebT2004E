@@ -32,9 +32,7 @@ img{
     text-transform: uppercase;
     background-color: #171717;
 }
-.container div{
-    border: 1px solid #FFFFFF;
-}
+
 .container_left{
     padding: 20px 0;
 }
@@ -50,24 +48,25 @@ img{
     width: 100%;
     padding: 22px 20px;
     overflow-x: hidden; /*nếu chữ ra khỏi layout sẽ ẩn*/
-    border: 1px solid #FFFFFF;
     background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
 }
-.container_left_link_left_span{
+.container_left_link_left:before{
     color: #171717;
-    /*position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     display: block;
+    content: '';
     width: 0%;
     height: 100%;
     background-color: #171717;
     opacity: 0.1;
     transition-property: width;
-    transition-duration: 0.3s;*/
+    transition-duration: 0.3s;
 }
-.container_left_link_left_span:hover{
+.container_left_link_left:hover:before{
     width: 100%;
 }
 .container_left_link_center{
