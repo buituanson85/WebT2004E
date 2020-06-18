@@ -72,7 +72,9 @@ img{
     color: #171717;
     text-transform: capitalize;
 }
-
+input:focus{
+    outline: none;
+}
 .name_left{
     margin-right: 100px;
     padding-top: 10px;
