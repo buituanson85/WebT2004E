@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javabuoi1</title>
+</head>
+<body>
+<script type="text/javascript">
+     // alert("cam tre em duoi 18 tuoi"); //ham mang tinhs nang canh bao
+   // if (confirm("Ban chac chan gui bai thi")) {
+   //     console.log("Nop xong,chờ kết quả...");
+   // }else {
+   //     console.log("tiếp tục thi..");
+   // }
+   //  var x= prompt("Điền họ và tên");
+    // console.log(x);
+    // var x= prompt("chọn con số may mắn:");
+    // var num= parseInt(Math.random()*100);
+    // console.log(num);
+    // if(x==num){
+    //     alert("chúc mừng đã chúng giải");
+    // }else{
+    //     alert("chúc may mắn lần sau");
+    // }
+    alert("Chương trình chọn 5 số khác nhau và chọn 5 số giống nhau");
+    var ary=[];
+    var arr=[];
+
+     for (let i=0 ; i<5 ; i++ ){
+         arr.push(parseInt(Math.random()*100));
+     }
+     arr.map(function (e) {
+         console.log(e);
+     })
+     var x= prompt("chon so may man");
+    for (let i=0 ; i<5 ; i++ ){
+        ary.push(prompt("chon so may man"));
+    }
+     ary.map(function (e) {
+         console.log(e);
+     })
+
+</script>
+<!--<script type="text/javascript" src="js/demo_js.js"></script>-->
+</body>
+</html>

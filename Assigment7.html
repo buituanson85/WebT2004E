@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assinment7</title>
+</head>
+<body>
+<script type="text/javascript">
+    alert("Chương trình xổ số vietlot");
+    var ary=[];
+    var arr=[];
+    do{
+        var num1=parseInt(Math.random()*100);
+        var num2=parseInt(Math.random()*100);
+        var num3=parseInt(Math.random()*100);
+        var num4=parseInt(Math.random()*100);
+        var num5=parseInt(Math.random()*100);
+    } while( num1==num2 || num1==num3 || num1==num4 || num1==num5 || num2==num3 || num2==num4 || num2==num5 || num3==num4 || num3==num5 || num4==num5 );
+    arr.push(num1,num2,num3,num4,num5);
+    arr.map(function (e) {
+        console.log(e);
+    })
+    var x1= prompt("Mời bạn chon số thứ nhất:");
+    if ( x1<0 || x1>99){
+        while ( x1<0 || x1>99){
+            x1= prompt("Số chọn không hợp lệ mời bạn chọn lại số thứ nhất:");
+        }
+    }
+    ary.push(x1);
+    var x2= prompt("Mời bạn chọn số thứ hai");
+    if (x1==x2 || x2 <0 || x2 >99){
+        while (x1==x2 || x2 <0 || x2 >99){
+            x2= prompt("Bạn chọn trùng số đã chọn or chọn số không hợp lệ mời chọn lại số thứ hai");
+        }
+        ary.push(x2);
+    }else{
+        ary.push(x2);
+    }
+    var x3= prompt("Mời bạn chọn số thứ ba");
+    if (x1==x3 || x2==x3 || x3<0 || x3 >99){
+        while (x1==x3 || x2==x3 || x3<0 || x3 >99){
+            x3= prompt("Bạn chọn trùng số đã chọn or chọn số không hợp lệ mời chọn lại số thứ ba");
+        }
+        ary.push(x3);
+    }else{
+        ary.push(x3);
+    }
+    var x4= prompt("Mời bạn chọn số thứ 4");
+    if (x1==x4 || x2==x4 || x3==x4 || x4<0 || x4 >99){
+        while (x1==x4 || x2==x4 || x3==x4 || x4<0 || x4 >99){
+            x4= prompt("Bạn chọn trùng số đã chọn or chọn số không hợp lệ mời chọn lại số thứ tư");
+        }
+        ary.push(x4);
+    }else{
+        ary.push(x4);
+    }
+    var x5= prompt("Mời bạn chọn số thứ năm");
+    if (x1==x5 || x2==x5 || x3==x5 || x1==x5 || x5<0 || x5 >99){
+        while (x1==x5 || x2===x5 || x3==x5 || x5<0 || x5 >99){
+            x5= prompt("Bạn chọn trùng số đã chọn or chọn số không hợp lệ mời chọn lại số thứ năm");
+        }
+        ary.push(x5);
+    }else{
+        ary.push(x5);
+    }
+    ary.map(function (e) {
+        console.log(e);
+    })
+
+    if ( num1==x1 || num1==x2 || num1==x3 || num1==x4 || num1==x5){
+        if ( num2==x1 || num2==x2 || num2==x3 || num2==x4 || num2==x5){
+            if ( num3==x1 || num3==x2 || num3==x3 || num3==x4 || num3==x5){
+                if ( num4==x1 || num4==x2 || num4==x3 || num4==x4 || num4==x5){
+                    if ( num5==x1 || num5==x2 || num5==x3 || num5==x4 || num5==x5){
+                        alert("Chúc mừng bạn thật may mắn 5 số bạn chọn giống với 5 số máy chọn");
+                    }
+                }else {
+                    alert("những số bạn chọn có số không giống kết quả máy chúc bạn may mắn lần sau:");
+                }
+            }else {
+                alert("những số bạn chọn có số không giống kết quả máy chúc bạn may mắn lần sau:");
+            }
+        }else {
+            alert("những số bạn chọn có số không giống kết quả máy chúc bạn may mắn lần sau:");
+        }
+    }else {
+        alert("những số bạn chọn có số không giống kết quả máy chúc bạn may mắn lần sau:");
+    }
+
+</script>
+</body>
+</html>
