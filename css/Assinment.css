@@ -7,4 +7,6 @@
     font-weight: 500;
     font-family: "Be Vietnam";
     text-transform: capitalize;
+    background-image: url("../imgs/vletlot.jpg");
+    max-width: 100%;
 }
