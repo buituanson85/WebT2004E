@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="heading">Tên lớp: </h1>
+    <h2 id="sub-heading1">Giáo Viên: </h2>
+    <h2 id="sub-heading2">Phòng Học</h2>
+    <h3 >Danh sách sinh viên</h3>
+    <ul id="student"></ul>
+        <script type="text/javascript">
+            //lấy theo id.
+            let classobj = {
+                name: "T2004E",
+                room: "A08",
+                teacher: {
+                    name: "Trịnh Quang Hòa",
+                    age: 18,
+                },
+                dsnv:[
+                    {
+                       name:"Bùi Tuấn Sơn",
+                        age: 35
+                    },
+                    {
+                        name:"Lê Hồng Việt",
+                        age: 23
+                    },
+                    {
+                        name:"Nguyễn Văn Khương",
+                        age: 20
+                    },
+
+                ]
+            }
+            let h1 = document.getElementById("heading");
+            // console.log(h1.innerText);  //tác dụng đến nội dung text bên trong.
+            // h1.innerText = "xin chao ";
+            // console.log(h1.innerText);
+            // h1.style.color="red";
+            // h1.style.backgroundColor="yellow";
+            // h1.style.border= "5px solid green";
+            // h1.innerHTML = "<i>"+h1.innerText+"</i>"  //bọc nội dung trong html vào thẻ i
+           h1.innerText = h1.innerText +classobj.name ;
+           let h2_s1 = document.getElementById("sub-heading1");
+           h2_s1.innerText = h2_s1.innerText + classobj.teacher.name;
+            let h2_s2 = document.getElementById("sub-heading2");
+           h2_s2.innerText = h2_s2.innerText + classobj.room;
+           let ul = document.getElementById("student");
+           // classobj.dsnv.map(function (e) {
+           //     let li = "<li>" + e.name +"</li>";
+           //     ul.innerHTML = ul.innerHTML +li;
+           // })
+            for (let i=0; i<classobj.dsnv.length; i++ ){
+                let li = "<li><b>"+ classobj.dsnv[i].name+"</b><i>"+classobj.dsnv[i].age+"</i></li>";
+                ul.innerHTML = ul.innerHTML+li ;
+            }
+        </script>
+</body>
+</html>

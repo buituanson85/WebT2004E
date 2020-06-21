@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Be Vietnam";
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+/*Thẻ hear */
+.header{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.35%;
+}
+
+.header_left{
+    width: 75%;
+    padding: 1.15% 0;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_left_logo{
+    width: 18.23%;
+}
+.header_left_logo img{
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.header_left_name{
+    width: 81.77%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 86%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.header_left_name span{
+
+}
+.header_left_watches{
+    margin-right: 8.51%;
+}
+.header_left_ourworld{
+    margin-right: 8.51%;
+}
+.header_left_boutiques{
+
+}
+
+.header_right{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header_right_hub{
+    width: 38.23%;
+    font-size: 86%;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.header_right_icon1{
+    width: 20.59%;
+    padding: 4.2% 0;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    display: block;
+    text-align: center;
+    font-weight: 900;
+}
+.header_right_icon2{
+    width: 20.59%;
+    text-align: center;
+}
+.header_right_icon3{
+    width: 20.59%;
+    padding: 4.2% 0;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    text-align: center;
+}
+
+/*Hết Thẻ hear */
+/* thẻ header_watcher */
+.header_watches{
+    display: block;
+    background-color: #171717;
+    color: #FFFFFF;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4.5%;
+}
+.header_watcher_span{
+    font-size: 500%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/*hết thẻ header_watcher */
+/*bắt đầu thẻ nav*/
+.nav{
+    width: 100%;
+    background-color: #171717;
+    display: flex;
+    justify-items: center;
+    flex-direction: row;
+    padding: 0 1.35%;
+}
+.nav_content{
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+}
+.nav_content_top{
+    display: block;
+}
+.nav_content_top img{
+    margin: 0 auto;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav_content_center{
+    padding: 7% 0;
+}
+.nav_content_bottom{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+/*het thẻ nav*/
+/*bắt đầu thẻ main_find*/
+.main_find{
+    width: 100%;
+    padding: 4.2% 1.35%;
+    display: flex;   /*tuong tu float*/
+    flex-direction: row; /*display theo chieu ngang*/
+    justify-content: center; /*tao khoi ve phia giua man hinh*/
+    font-size: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #171717;
+}
+.main_find_left{
+    width: 24%;
+    padding: 0.8% 0;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: #171717;
+    margin-right: 1.5%;
+}
+.main_find_right{
+    width: 22%;
+    padding: 0.8% 0;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+}
+.main_find_link_span_right{
+    color: #FFFFFF;
+}
+/*hết thẻ main find*/
+/*Bắt đầu thẻ main_ourworld*/
+.main_ourworld{
+    width: 100%;
+    height: 100%;
+    padding: 4.6% 1.35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #171717;
+}
+.main_ourworld_content_left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-right: 0.8%;
+    position: relative;
+    margin-bottom: 5%;
+}
+.main_ourworld_content_right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    margin-left: 0.8%;
+    position: relative;
+    margin-bottom: 5%;
+}
+.main_ourworld_content_left_top{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%;
+}
+.main_ourworld_content_right_top{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 100%;
+
+}
+.main_ourworld_content_left_top img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1;
+}
+.main_ourworld_content_right_top img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+
+}
+
+.main_ourworld_content_left_bottom{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    color: #FFFFFF;
+    font-size: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    bottom: -8%;
+}
+.main_ourworld_content_right_bottom{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    color: #FFFFFF;
+    font-size: 100%;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    bottom: -8%;
+}
+.main_ourworld_content_left_bottom_main{
+    background-color: #171717;
+    z-index: 2;
+}
+.main_ourworld_content_right_bottom_main{
+    background-color: #171717;
+    z-index: 2;
+}
+.main_ourworld_content_left_bottom_content{
+    margin-top: 8%;
+}
+.main_ourworld_content_right_bottom_content{
+    margin-top: 8%;
+}
+.main_ourworld_content_left_bottom_content_craftsmanship{
+    color: #FFFFFF;
+    font-size: 250%;
+    font-weight: bolder;
+    margin-left: 10%;
+}
+.main_ourworld_content_right_bottom_content_partnerships{
+    color: #FFFFFF;
+    font-size: 250%;
+    font-weight: bolder;
+    margin-left: 10%;
+}
+.main_ourworld_content_left_bottom_content_span{
+    margin-left: 10%;
+}
+.main_ourworld_content_right_bottom_content_span{
+    margin-left: 10%;
+}
+.main_ourworld_content_left_bottom_content_learmore{
+    margin-left: 10%;
+}
+.main_ourworld_content_right_bottom_content_learmore{
+    margin-left: 10%;
+}
+.main_ourworld_content_left_bottom_content_span_learmore{
+    border: 1px solid #FFFFFF;
+    padding: 2% 6%;
+    background-color: #FFFFFF;
+    color: #171717;
+}
+.main_ourworld_content_right_bottom_content_span_learmore{
+    border: 1px solid #FFFFFF;
+    padding: 2% 6%;
+    background-color: #FFFFFF;
+    color: #171717;
+}
+/*hết thẻ main_ourworld*/
+/*bắt đầu thẻ main music*/
+.main_music{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 4.6% 1.35%;
+    position: relative;
+    margin-bottom: 10%;
+}
+.main_music_top img{
+    z-index: 1;
+}
+.main_music_bottom{
+    width: 100%;
+    padding: 0 5%;
+    position: absolute;
+    left: 0;
+    bottom: -6%;
+}
+.main_music_bottom_main{
+    background-color: #FFFFFF;
+    z-index: 2;
+}
+.main_music_bottom_content{
+    width: 100%;
+    padding-top: 4%;
+    z-index: 1;
+}
+.main_music_bottom_content_artmusic{
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 5%;
+}
+.main_music_bottom_content_richardorlinski{
+    font-size: 250%;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 5%;
+}
+.main_music_bottom_content_link_learmore{
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid #171717;
+    padding: 1% 3%;
+    margin-left: 5%;
+}
+/*Hết main_music*/
+/*bắt đầu fooder*/
+.fooder{
+    background-color: #000000;
+    padding: 5% 1.35%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.fooder_logo{
+    width: 100%;
+    text-align: center;
+}
+.fooder_logo img{
+
+}
+.fooder_menu{
+    width: 100%;
+    font-size: 80%;
+    padding-top: 5%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fooder_menu_content{
+    margin-left: 2.5%;
+
+}
+.fooder_menu_content_a{
+    color: #FFFFFF;
+}
+.fooder_language{
+    width: 100%;
+    font-size: 80%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1%;
+}
+.fooder_language_english{
+    margin-right: 3%;
+    color: red;
+}
+.fooder_language_span{
+    color: red;
+}
+.fooder_icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2% 0;
+}
+.fooder_icon_link{
+    margin-right: 3%;
+}
+.fooder_fooder{
+    font-size: 80%;
+    opacity: 0.8;
+    color: #FFFFFF;
+}

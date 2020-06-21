@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+</head>
+<body>
+<!--<script type="text/javascript">-->
+<!--    // let obj = {     //obj tên biến có thể tự đặt cũng đc-->
+<!--    // //    khu vực khai báo đối tượng-->
+<!--    //     name : "Nguyễn Văn An",-->
+<!--    //     age : 18,-->
+<!--    // //    đây là đối tượng có 2 thông tin 2 thuộc tính.-->
+<!--    //     //    ko dc dùng dấu chấm phẩy bên trong thằng này-->
+<!--    //     address: "số 8 tôn thất huyết",-->
+<!--    // //    hành vi:-->
+<!--    //     run : function ($str) {-->
+<!--    //          console.log($str+ " is running...");-->
+<!--    //     }  //obj là đối tượng tuy nhiên thực tế trong ngoặc {} là đối tượng ko cần khai báo obj cho thẳng {} vào hàm cung xđược-->
+<!--    // };-->
+<!--    // lấy thông tin của đối tượng đối tượng.thuôc tính-->
+<!--    // obj.name;-->
+<!--    // obj.address; //lấy thông tin của giá trị-->
+<!--    // console.log(obj.name);-->
+<!--    // console.log(obj.address);-->
+<!--    // obj.run(); //chạy hàm run-->
+<!--    // obj.run(obj.name);-->
+<!--    // let obj = {     //obj tên biến có thể tự đặt cũng đc-->
+<!--    //     //    khu vực khai báo đối tượng-->
+<!--    //     name : "Nguyễn Văn An",-->
+<!--    //     age : 18,-->
+<!--    //     //    đây là đối tượng có 2 thông tin 2 thuộc tính.-->
+<!--    //     //    ko dc dùng dấu chấm phẩy bên trong thằng này-->
+<!--    //     address: "số 8 tôn thất huyết",-->
+<!--    //     //    hành vi:-->
+<!--    //     run : function ($str) {-->
+<!--    //         console.log(this.name+ " is running...");  this.name this được cho là thay thế tên biến obj .name là giá trị đã khai báo-->
+<!--    //     }  //obj là đối tượng tuy nhiên thực tế trong ngoặc {} là đối tượng ko cần khai báo obj cho thẳng {} vào hàm cung xđược-->
+<!--    // };-->
+<!--    let obj = {     //obj tên biến có thể tự đặt cũng đc-->
+<!--        //    khu vực khai báo đối tượng-->
+<!--        name : "Nguyễn Văn An",-->
+<!--        age : 18,-->
+<!--        //    đây là đối tượng có 2 thông tin 2 thuộc tính.-->
+<!--        //    ko dc dùng dấu chấm phẩy bên trong thằng này-->
+<!--        address: "số 8 tôn thất huyết",-->
+<!--        //    hành vi:-->
+<!--        run : function ($str) {-->
+<!--            console.log($str+ " is running...");-->
+<!--        }, //obj là đối tượng tuy nhiên thực tế trong ngoặc {} là đối tượng ko cần khai báo obj cho thẳng {} vào hàm cung xđược-->
+<!--        //khai báo mảng-->
+<!--        girlFriends: [-->
+<!--            "Ngọc trinh","phương trinh"-->
+<!--        ],-->
+<!--        gotoHotel: function(){-->
+<!--            // for(let i=0 ; i<this.girlFriends.length; i++ ){-->
+<!--            //     console.log("di hotel voi" + this.girlFriends[i]);-->
+<!--            // } duyệt thao chỉ mục-->
+<!--            // this.girlFriends.map(function (e) {-->
+<!--            //     console.log("Di hotel voi " +e);-->
+<!--            // })-->
+<!--            console.log("đi hotel voi"+ this.girlFriends);-->
+<!--        },-->
+<!--        children: {-->
+<!--            name: "Nguyễn văn B",-->
+<!--            birthday: "22-5-1999",//thuộc tính chính là biến hành vi là hàm fun..-->
+<!--            playgame: function(){-->
+<!--                console.log("Playing game...");-->
+<!--                return this;   //this của hàm trong đối tượng nào thì của đối tượng ấy-->
+<!--            },-->
+<!--            children: {-->
+<!--                name: "Nguyễn văn C",-->
+<!--                birthday: "22-5-1999",//thuộc tính chính là biến hành vi là hàm fun..-->
+<!--                eat: function () {-->
+<!--                     console.log("uống sữa");-->
+<!--                    return this;-->
+<!--                },-->
+<!--                sleep: function () {-->
+<!--                    console.log("đi ngủ....");-->
+<!--                    return this; //this là trong phạm vi đối tượng cháu cách gọi một lúc 2 hàm-->
+<!--                }-->
+<!--            },-->
+<!--        },-->
+<!--    };-->
+<!--    obj.name;-->
+<!--    obj.address; //lấy thông tin của giá trị-->
+<!--    console.log(obj.name);-->
+<!--    console.log(obj.address);-->
+<!--    obj.run(); //chạy hàm run-->
+<!--    obj.run(obj.name);-->
+<!--    console.log("Tên của con là : "+ obj.children.name);-->
+<!--    console.log("Tên của cháu là:" + obj.children.children.name)-->
+<!--    obj.children.children.eat();-->
+<!--    obj.children.children.sleep();-->
+<!--    obj.children.children.eat().sleep();-->
+<!--    obj.children.playgame();-->
+<!--    obj.gotoHotel();-->
+<!--    obj.name = "Nguyễn Văn Anh" //thay đổi thông tin của đối tượng.-->
+<!--    console.log(obj.name);-->
+<!--</script>-->
+<!--<script type="text/javascript">-->
+<!--    let obj = {-->
+<!--        className: "T2004E",-->
+<!--        lopHoc : function () {-->
+<!--            console.log("lớp học tối thứ 3 5 7");-->
+<!--        },-->
+<!--        phongHoc: "A8",-->
+<!--        giaoVien: {-->
+<!--            name: "Trịnh Quang Hòa",-->
+<!--            age: "30",-->
+<!--            sex: "male",-->
+<!--        },-->
+<!--        -->
+<!--        danhSachSinhVien:[
+{-->
+<!--            name01: {-->
+<!--                name: "Nguyễn Văn A01",-->
+<!--                Age:"19",-->
+<!--                mssv: "01",-->
+<!--            },-->
+<!--            name02: {-->
+<!--                name: "Nguyễn Văn A02",-->
+<!--                Age:"15",-->
+<!--                mssv: "02",-->
+<!--            },-->
+<!--            name03: {-->
+<!--                name: "Nguyễn Văn A03",-->
+<!--                Age:"29",-->
+<!--                mssv: "03",-->
+<!--            },-->
+<!--            name04: {-->
+<!--                name: "Nguyễn Văn A04",-->
+<!--                Age:"34",-->
+<!--                mssv: "04",-->
+<!--            },-->
+<!--        },-->]
+<!--    }-->
+<!--    console.log(obj.className);-->
+<!--</script>-->
+
+</body>
+</html>
