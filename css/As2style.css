@@ -28,8 +28,10 @@ body{
 
 #banner_top #right a:link{
     color: black;
-    text-decoration: none;
+    text-decoration: ;
     word-spacing: 1.5px;
+    text-transform: capitalize;
+
 }
 
 #main {

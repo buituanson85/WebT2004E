@@ -49,14 +49,14 @@
             let h2_s2 = document.getElementById("sub-heading2");
            h2_s2.innerText = h2_s2.innerText + classobj.room;
            let ul = document.getElementById("student");
-           // classobj.dsnv.map(function (e) {
-           //     let li = "<li>" + e.name +"</li>";
-           //     ul.innerHTML = ul.innerHTML +li;
-           // })
-            for (let i=0; i<classobj.dsnv.length; i++ ){
-                let li = "<li><b>"+ classobj.dsnv[i].name+"</b><i>"+classobj.dsnv[i].age+"</i></li>";
-                ul.innerHTML = ul.innerHTML+li ;
-            }
+           classobj.dsnv.map(function (e) {
+               let li = "<li>" + e.name +"</li>";
+               ul.innerHTML = ul.innerHTML +li;
+           })
+           //  for (let i=0; i<classobj.dsnv.length; i++ ){
+           //      let li = "<li><b>"+ classobj.dsnv[i].name+"</b><i>"+classobj.dsnv[i].age+"</i></li>";
+           //      ul.innerHTML = ul.innerHTML+li ;
+           //  }
         </script>
 </body>
 </html>

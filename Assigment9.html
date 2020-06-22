@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assigment9</title>
+</head>
+<body id="main">
+      <h2 id="citynation" style="font-size: 20px;text-transform: capitalize"> weather forecast for </h2>
+      <h3 id="weather">current Weather:</h3>
+      <ul id="menu">
+          <li id="temperature">temperature</li>
+          <li id="pressure">Pressure</li>
+          <li id="humidity">Humidity</li>
+          <li id="lowest_temperature">Lowest temperature</li>
+          <li id="maximum_temperature">Maximum temperature</li>
+          <li id="sea_​​level">sea ​​level</li>
+      </ul>
+
+     <script type="text/javascript">
+         var currentWeather = {
+             coord:{
+                 lon:139.01,
+                 lat:35.02
+             },
+             weather:
+                 [
+                     {
+                         id :800,
+                         main : "Clear" ,
+                         description : "clear sky , icon : 01n"
+                     }
+                 ],
+             base : "stations",
+             main :{
+                 temp :285.514,
+                 pressure :1013.75,
+                 humidity :100,
+                 temp_min :285.514,
+                 temp_max :285.514,
+                 sea_level :1023.22,
+                 grnd_level :1013.75
+             },
+             wind :{
+                 speed :5.52,
+                 deg :311
+             },
+             clouds :{
+                 all :0
+             },
+             dt :1485792967,
+             sys :{
+                 message :0.0025,
+                 country : "JP" ,
+                 sunrise :1485726240,
+                 sunset :1485763863
+             },
+             id :1907296,
+             name : "Tawarano",
+             cod :200
+         }
+         let h2= document.getElementById("citynation");
+         h2.innerText = h2.innerText +": "+currentWeather.name +"," +currentWeather.sys.country+".";
+         h2.style.fontSize="30px";
+         h2.style.wordSpacing="1.5px";
+         h2.style.letterSpacing="1.5px";
+         let h3 = document.getElementById("weather");
+         h3.style.fontSize="24px";
+         h3.style.wordSpacing="1.5px";
+         h3.style.letterSpacing="1.5px";
+         h3.style.textTransform="capitalize";
+         let li_s1 = document.getElementById("temperature");
+         li_s1.innerText= li_s1.innerText+": "+currentWeather.main.temp+".";
+         let li_s2 = document.getElementById("pressure");
+         li_s2.innerText= li_s2.innerText+": "+currentWeather.main.pressure+".";
+         let li_s3 = document.getElementById("humidity");
+         li_s3.innerText= li_s3.innerText+": "+currentWeather.main.humidity+".";
+         let li_s4 = document.getElementById("lowest_temperature");
+         li_s4.innerText= li_s4.innerText+": "+currentWeather.main.temp_min+".";
+         let li_s5 = document.getElementById("maximum_temperature");
+         li_s5.innerText= li_s5.innerText+": "+currentWeather.main.temp_max+".";
+         let li_s6 = document.getElementById("sea_​​level");
+         li_s6.innerText= li_s6.innerText+": "+currentWeather.main.sea_level+".";
+         let ul = document.getElementById("menu");
+         ul.style.fontSize="18px";
+         ul.style.textTransform="capitalize";
+         ul.style.wordSpacing="1.5px";
+         ul.style.letterSpacing="1.5px"
+     </script>
+</body>
+</html>
