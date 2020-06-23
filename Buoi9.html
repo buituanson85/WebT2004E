@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--        <button onclick="clickHere()">click here to 18+</button>-->
+<!--&lt;!&ndash;        kick chuột vào hàm được thực thi&ndash;&gt;-->
+<!--        <button onmouseenter="mouseto()">Mouse over here to</button>-->
+<!--&lt;!&ndash;        đưa chuột vào hàm được thực thi&ndash;&gt;-->
+<!--        <button onmouseleave="mouseLeave(this)">Mouse lever 2222222</button>-->
+<!--        <button onmouseleave="mouseLeave(this)">Mouse lever 2222222</button>-->
+<!--        <button onmouseleave="mouseLeave(this)">Mouse lever 2222222</button>-->
+<!--        Ngược với hàm trên-->
+        <br>
+        <input onkeydown="keyDown(this)" type="text" name="abc" placeholder="demo js with inpust"/>
+        <input onkeypress="keyPress(this)" type="text" placeholder="demo 2"/>
+        <select name="select" onchange="select()">
+            <option value="1">value 1</option>
+            <option value="2">value 2</option>
+        </select>
+        <!--khi nào người dùng nạp thêm giá trị mới phát ra-->
+        <script type="text/javascript">
+            // function clickHere() {
+            //     alert("Bi lua roi,ko co dau!");
+            // }
+            // function mouseto(){
+            //     alert("mouse enter...");
+            // }
+            // function mouseLeave(e) {
+            //     alert(e.innerText);
+            // }
+           function keyDown(e) {
+                console.log(e.value);
+           }
+           function keyDown(e) {
+                if (event.keycode==13){
+                    alert("Vua nhan phim enter");
+                }else {
+                    console.log(e.value);
+                }
+           }
+           function keyPress(e) {
+               console.log(e.value);
+           }
+           function select(e) {
+               console.log("change value");
+           }
+        </script>
+</body>
+</html>
