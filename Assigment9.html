@@ -69,22 +69,22 @@
          h3.style.letterSpacing="1.5px";
          h3.style.textTransform="capitalize";
          let li_s1 = document.getElementById("temperature");
-         li_s1.innerText= li_s1.innerText+": "+currentWeather.main.temp+".";
+         li_s1.innerHTML=li_s1.innerText+": "+currentWeather.main.temp+" Celsius F.";
          let li_s2 = document.getElementById("pressure");
-         li_s2.innerText= li_s2.innerText+": "+currentWeather.main.pressure+".";
+         li_s2.innerText= li_s2.innerText+": "+currentWeather.main.pressure+" bar.";
          let li_s3 = document.getElementById("humidity");
-         li_s3.innerText= li_s3.innerText+": "+currentWeather.main.humidity+".";
+         li_s3.innerText= li_s3.innerText+": "+currentWeather.main.humidity+" %.";
          let li_s4 = document.getElementById("lowest_temperature");
-         li_s4.innerText= li_s4.innerText+": "+currentWeather.main.temp_min+".";
+         li_s4.innerText= li_s4.innerText+": "+currentWeather.main.temp_min+" Celsius F.";
          let li_s5 = document.getElementById("maximum_temperature");
-         li_s5.innerText= li_s5.innerText+": "+currentWeather.main.temp_max+".";
+         li_s5.innerText= li_s5.innerText+": "+currentWeather.main.temp_max+" Celsius F.";
          let li_s6 = document.getElementById("sea_​​level");
-         li_s6.innerText= li_s6.innerText+": "+currentWeather.main.sea_level+".";
+         li_s6.innerText= li_s6.innerText+": "+currentWeather.main.sea_level+" ft.";
          let ul = document.getElementById("menu");
          ul.style.fontSize="18px";
          ul.style.textTransform="capitalize";
          ul.style.wordSpacing="1.5px";
-         ul.style.letterSpacing="1.5px"
+         ul.style.letterSpacing="1.5px";
      </script>
 </body>
 </html>
