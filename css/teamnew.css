@@ -365,7 +365,7 @@ img{
 }
 .main_music_bottom{
     width: 100%;
-    padding: 0 5%;
+    padding: 0 6%;
     position: absolute;
     left: 0;
     bottom: -6%;
@@ -411,12 +411,25 @@ img{
     justify-items: center;
     align-items: center;
 }
+@media (max-width: 900px) {
+    .fooder{
+        padding: 3.5% 1.35%;
+    }
+}
 .fooder_logo{
     width: 100%;
     text-align: center;
 }
-.fooder_logo img{
 
+.fooder_logo_img{
+    height: 4%;
+    width: 4%;
+}
+@media (max-width: 900px) {
+    .fooder_logo_img{
+        height: 10%;
+        width: 10%;
+    }
 }
 .fooder_menu{
     width: 100%;
@@ -426,12 +439,21 @@ img{
     text-transform: uppercase;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-weight: 700;
 }
+@media (max-width: 900px) {
+    .fooder_menu{
+        flex-direction: column;
+        font-size: 180%;
+        line-height: 350%;
+        padding-top: 1%;
+    }
+}
 .fooder_menu_content{
-    margin-left: 2.8%;
+    margin-left: 1%;
+    margin-right: 1%;
 
 }
 .fooder_menu_content_a{
@@ -446,31 +468,127 @@ img{
     justify-content: center;
     padding-top: 1%;
     padding-bottom: 1%;
+    align-items: center;
+}
+@media (max-width: 900px) {
+    .fooder_language {
+        flex-direction: column;
+        font-size: 150%;
+        line-height: 350%;
+        padding-top: 5%;
+    }
 }
 .fooder_language_english{
     margin-right: 3%;
     color: red;
 }
-.fooder_language_span{
-    color: red;
+@media (max-width: 900px) {
+    .fooder_language_vietnam{
+        padding-top: 3%;
+    }
 }
+.fooder_language_english a{
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+@media (max-width: 900px) {
+    .fooder_language_english a{
+        flex-direction: column;
+        font-size: 110%;
+        line-height: 150%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2vw;
+        text-align: center;
+    }
+}
+.fooder_language_vietnam a{
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+@media (max-width: 900px) {
+    .fooder_language_vietnam a{
+        flex-direction: column;
+        font-size: 110%;
+        line-height: 150%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 1vw;
+    }
+}
+.fooder_language_english_icon{
+    margin-left: 1.5vw;
+
+}
+
+@media (max-width: 900px) {
+    .fooder_language_english_icon{
+        flex-direction: column;
+        font-size: 150%;
+        line-height: 150%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-right: 1.5vw;
+        text-align: center;
+    }
+}
+@media (max-width: 900px) {
+    .fooder_language_vietnam_icon{
+        flex-direction: column;
+        font-size: 150%;
+        line-height: 150%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin-right: 1.7vw;
+        text-align: center;
+    }
+}
+.fooder_language_vietnam_span span{
+    margin-right: 1.5vw;
+}
+
 .fooder_icon{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding: 2% 0;
+    font-size:1.4vw;
+}
+@media (max-width: 900px) {
+    .fooder_icon{
+        padding-top: 4%;
+        font-size: 300%;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        margin-left: 7%;
+    }
 }
 .fooder_icon_link{
     margin-right: 3%;
 }
+@media (max-width: 900px) {
+    .fooder_icon_link{
+        margin-right: 6%;
+    }
+}
 .fooder_fooder{
     font-size: 95%;
-    opacity: 0.8;
+    opacity: 0.7;
     color: #FFFFFF;
 }
 @media (max-width: 900px) {
-    .fooder_menu{
-        flex-direction: column;
+    .fooder_fooder{
+        padding-top: 8%;
+        font-size: 170%;
     }
 }
