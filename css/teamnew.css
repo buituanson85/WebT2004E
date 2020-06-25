@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: "Be Vietnam";
+    font-family: GothamPro, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.1vw;
@@ -140,6 +140,11 @@ img{
     flex-direction: row;
     padding: 0 1.35%;
 }
+@media (max-width: 900px) {
+    .nav{
+        flex-direction: column;
+    }
+}
 .nav_content{
     width: 100%;
     display: flex;
@@ -147,6 +152,14 @@ img{
     flex-direction: column;
     padding-top: 3.5%;
     padding-bottom: 3.5%;
+}
+@media (max-width: 900px) {
+    .nav_content{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+    }
 }
 .nav_content_top{
     display: block;
@@ -169,6 +182,11 @@ img{
     font-weight: 700;
     color: #FFFFFF;
 }
+@media (max-width: 900px) {
+    .nav_content_bottom{
+         font-size: 200%;
+    }
+}
 /*het thẻ nav*/
 /*bắt đầu thẻ main_find*/
 .main_find{
@@ -182,6 +200,14 @@ img{
     text-transform: uppercase;
     background-color: #171717;
 }
+@media (max-width: 900px) {
+    .main_find{
+        flex-direction: column;
+        align-items: center;
+        font-size: 150%;
+    }
+}
+
 .main_find_left{
     width: 20%;
     padding: 0.8% 0;
@@ -191,11 +217,32 @@ img{
     color: #171717;
     margin-right: 1.5%;
 }
+@media (max-width: 900px){
+    .main_find_left{
+        width: 65%;
+        display: block;
+        margin: 0;
+        padding: 2% 10%;
+        font-weight: 700;
+        letter-spacing: 0.3vw;
+    }
+}
 .main_find_right{
     width: 20%;
     padding: 0.8% 0;
     text-align: center;
     border: 0.05vw solid #FFFFFF;
+}
+@media (max-width: 900px){
+    .main_find_right{
+        width: 65%;
+        display: block;
+        padding: 2% 10%;
+        font-weight: 500;
+        letter-spacing: 0.3vw;
+        margin: 2% 0 0 0;
+
+    }
 }
 .main_find_link_span_right{
     color: #FFFFFF;
@@ -212,6 +259,12 @@ img{
     margin: 0 auto;
     background-color: #171717;
 }
+@media (max-width: 900px) {
+    .main_ourworld{
+        flex-direction: column;
+        padding: 4.6% 3%;
+    }
+}
 .main_ourworld_content_left{
     width: 50%;
     height: 100%;
@@ -223,6 +276,12 @@ img{
     position: relative;
     margin-bottom: 5%;
 }
+@media (max-width: 900px) {
+    .main_ourworld_content_left{
+        width: 100%;
+        padding-bottom: 20%;
+    }
+}
 .main_ourworld_content_right{
     width: 50%;
     height: 100%;
@@ -233,6 +292,13 @@ img{
     margin-left: 0.8%;
     position: relative;
     margin-bottom: 5%;
+}
+@media (max-width: 900px) {
+    .main_ourworld_content_right{
+        width: 100%;
+        margin: 0;
+        padding-bottom: 20%;
+    }
 }
 .main_ourworld_content_left_top{
     width: 100%;
@@ -267,7 +333,6 @@ img{
     width: 100%;
     height: 100%;
     border: none;
-
 }
 
 .main_ourworld_content_left_bottom{
@@ -284,6 +349,15 @@ img{
     left: 0;
     bottom: -8%;
 }
+@media (max-width: 900px) {
+    .main_ourworld_content_left_bottom{
+        padding: 0 15%;
+        position: absolute;
+        left: 0;
+        bottom: 3%;
+        text-align: center;
+    }
+}
 .main_ourworld_content_right_bottom{
     width: 100%;
     margin: 0 auto;
@@ -297,6 +371,15 @@ img{
     position: absolute;
     left: 0;
     bottom: -8%;
+}
+@media (max-width: 900px) {
+    .main_ourworld_content_right_bottom{
+        padding: 0 15%;
+        position: absolute;
+        left: 0;
+        bottom: 3%;
+        text-align: center;
+    }
 }
 .main_ourworld_content_left_bottom_main{
     background-color: #171717;
@@ -318,23 +401,61 @@ img{
     font-weight: bolder;
     margin-left: 10%;
 }
+@media (max-width: 900px) {
+    .main_ourworld_content_left_bottom_content_craftsmanship{
+        margin: 0;
+    }
+}
 .main_ourworld_content_right_bottom_content_partnerships{
     color: #FFFFFF;
     font-size: 250%;
     font-weight: bolder;
     margin-left: 10%;
 }
+@media (max-width: 900px) {
+    .main_ourworld_content_right_bottom_content_partnerships{
+        margin: 0;
+    }
+}
 .main_ourworld_content_left_bottom_content_span{
     margin-left: 10%;
+}
+@media (max-width: 900px) {
+    .main_ourworld_content_left_bottom_content_span{
+        font-size: 150%;
+        font-weight: 600;
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
 }
 .main_ourworld_content_right_bottom_content_span{
     margin-left: 10%;
 }
+@media (max-width: 900px) {
+    .main_ourworld_content_right_bottom_content_span{
+        font-size: 150%;
+        font-weight: 600;
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
+}
 .main_ourworld_content_left_bottom_content_learmore{
     margin-left: 10%;
 }
+@media (max-width: 900px) {
+    .main_ourworld_content_left_bottom_content_learmore{
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
+}
 .main_ourworld_content_right_bottom_content_learmore{
     margin-left: 10%;
+}
+@media (max-width: 900px) {
+    .main_ourworld_content_right_bottom_content_learmore{
+        letter-spacing: 0.5vw;
+        margin: 0;
+    }
 }
 .main_ourworld_content_left_bottom_content_span_learmore{
     border: 0.05vw solid #FFFFFF;
@@ -342,11 +463,25 @@ img{
     background-color: #FFFFFF;
     color: #171717;
 }
+@media (max-width: 900px) {
+    .main_ourworld_content_left_bottom_content_span_learmore{
+        padding: 3% 35%;
+        font-weight: bolder;
+        font-size: 150%;
+    }
+}
 .main_ourworld_content_right_bottom_content_span_learmore{
     border: 0.05vw solid #FFFFFF;
     padding: 2% 6%;
     background-color: #FFFFFF;
     color: #171717;
+}
+@media (max-width: 900px) {
+    .main_ourworld_content_right_bottom_content_span_learmore{
+        padding: 3% 35%;
+        font-weight: bolder;
+        font-size: 150%;
+    }
 }
 /*hết thẻ main_ourworld*/
 /*bắt đầu thẻ main music*/
@@ -360,15 +495,29 @@ img{
     position: relative;
     margin-bottom: 10%;
 }
+@media (max-width: 900px) {
+    .main_music{
+        padding: 4.6% 3% 10% 3%;
+    }
+}
 .main_music_top img{
     z-index: 1;
 }
 .main_music_bottom{
     width: 100%;
-    padding: 0 6%;
+    padding: 0 5%;
     position: absolute;
     left: 0;
     bottom: -6%;
+}
+@media (max-width: 900px) {
+    .main_music_bottom{
+        text-align: center;
+        padding: 0 15%;
+        position: absolute;
+        left: 0;
+        bottom: -3%;
+    }
 }
 .main_music_bottom_main{
     background-color: #FFFFFF;
@@ -379,17 +528,40 @@ img{
     padding-top: 4%;
     z-index: 1;
 }
+@media (max-width: 900px) {
+    .main_music_bottom_content{
+        padding-top: 5%;
+    }
+}
 .main_music_bottom_content_artmusic{
     font-size: 100%;
     text-transform: uppercase;
     font-weight: 500;
     margin-left: 5%;
 }
+@media (max-width: 900px) {
+    .main_music_bottom_content_artmusic{
+        margin: 0;
+        font-size: 150%;
+        letter-spacing: 0.5vw;
+    }
+}
 .main_music_bottom_content_richardorlinski{
     font-size: 250%;
     text-transform: uppercase;
     font-weight: 900;
     margin-left: 5%;
+}
+@media (max-width: 900px) {
+    .main_music_bottom{
+        margin: 0;
+        letter-spacing: 0.5vw;
+    }
+}
+@media (max-width: 900px) {
+    .main_music_bottom_content_link{
+        margin-top: 30px;
+    }
 }
 .main_music_bottom_content_link_learmore{
     font-size: 100%;
@@ -398,6 +570,15 @@ img{
     border: 0.05vw solid #171717;
     padding: 1% 3%;
     margin-left: 5%;
+}
+@media (max-width: 900px) {
+    .main_music_bottom_content_link_learmore{
+        padding: 3% 32%;
+        font-weight: bolder;
+        font-size: 150%;
+        margin: 0;
+        border: 0.1vw solid #171717;
+    }
 }
 /*Hết main_music*/
 /*bắt đầu fooder*/
@@ -413,22 +594,21 @@ img{
 }
 @media (max-width: 900px) {
     .fooder{
-        padding: 3.5% 1.35%;
+        padding: 3% 3%;
     }
 }
 .fooder_logo{
     width: 100%;
     text-align: center;
 }
-
 .fooder_logo_img{
     height: 4%;
     width: 4%;
 }
 @media (max-width: 900px) {
     .fooder_logo_img{
-        height: 10%;
-        width: 10%;
+        height: 8%;
+        width: 8%;
     }
 }
 .fooder_menu{
@@ -445,16 +625,21 @@ img{
 }
 @media (max-width: 900px) {
     .fooder_menu{
+        padding-top: 0;
         flex-direction: column;
-        font-size: 180%;
-        line-height: 350%;
-        padding-top: 1%;
     }
 }
 .fooder_menu_content{
-    margin-left: 1%;
-    margin-right: 1%;
-
+    margin-left: 1.2%;
+    margin-right: 1.2%;
+}
+@media (max-width: 900px) {
+    .fooder_menu_content{
+        margin: 0;
+        padding-top: 4%;
+        font-size: 160%;
+        letter-spacing: 0.3vw;
+    }
 }
 .fooder_menu_content_a{
     color: #FFFFFF;
@@ -468,90 +653,94 @@ img{
     justify-content: center;
     padding-top: 1%;
     padding-bottom: 1%;
-    align-items: center;
 }
 @media (max-width: 900px) {
-    .fooder_language {
+    .fooder_language{
         flex-direction: column;
+        align-items: center;
         font-size: 150%;
-        line-height: 350%;
-        padding-top: 5%;
+        padding-top: 8%;
+        padding-bottom: 5%;
     }
 }
 .fooder_language_english{
-    margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 2%;
     color: red;
+}
+@media (max-width: 900px) {
+    .fooder_language_english{
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+        padding: 0;
+        margin-bottom: 6vw;
+    }
+}
+.fooder_language_vietnam{
+    display: flex;
+    flex-direction: row;
 }
 @media (max-width: 900px) {
     .fooder_language_vietnam{
-        padding-top: 3%;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
     }
 }
-.fooder_language_english a{
+.fooder_language_span{
     color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
+}
+
+.fooder_language_link{
+    margin-right: 2.5%;
 }
 @media (max-width: 900px) {
-    .fooder_language_english a{
-        flex-direction: column;
-        font-size: 110%;
-        line-height: 150%;
-        align-items: center;
-        justify-content: center;
-        margin-left: 2vw;
-        text-align: center;
+    .fooder_language_link{
+        margin: 0;
+        padding: 0;
     }
 }
-.fooder_language_vietnam a{
-    color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+.fooder_language_english_span{
+    margin-right: 1vw;
 }
 @media (max-width: 900px) {
-    .fooder_language_vietnam a{
-        flex-direction: column;
-        font-size: 110%;
-        line-height: 150%;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 1vw;
+    .fooder_language_english_span{
+        margin-right: 0;
+        margin-bottom: 1vw;
+    }
+}
+@media (max-width: 900px) {
+    .fooder_language_vietnam_span{
+        margin-bottom: 1vw;
+        padding: 0;
     }
 }
 .fooder_language_english_icon{
-    margin-left: 1.5vw;
-
+    margin-right: 1vw;
+    font-size: 1.2vw;
+    line-height: 100%;
 }
-
 @media (max-width: 900px) {
     .fooder_language_english_icon{
-        flex-direction: column;
-        font-size: 150%;
-        line-height: 150%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        margin-right: 1.5vw;
-        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
     }
+}
+.fooder_language_vietnam_icon{
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    line-height: 100%;
 }
 @media (max-width: 900px) {
     .fooder_language_vietnam_icon{
-        flex-direction: column;
-        font-size: 150%;
-        line-height: 150%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        margin-right: 1.7vw;
-        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 2vw;
     }
-}
-.fooder_language_vietnam_span span{
-    margin-right: 1.5vw;
 }
 
 .fooder_icon{
@@ -560,35 +749,33 @@ img{
     flex-direction: row;
     justify-content: center;
     padding: 2% 0;
-    font-size:1.4vw;
+    margin-left: 2%;
 }
 @media (max-width: 900px) {
     .fooder_icon{
-        padding-top: 4%;
-        font-size: 300%;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        margin-left: 7%;
+        font-size: 150%;
+        margin: 0;
+        padding: 0 0 8% 0;
     }
 }
 .fooder_icon_link{
-    margin-right: 3%;
+    margin-right: 3.5%;
+    font-size: 1.4vw;
 }
 @media (max-width: 900px) {
     .fooder_icon_link{
-        margin-right: 6%;
+        margin-left: 3.8%;
+        font-size: 2.4vw;
     }
 }
 .fooder_fooder{
-    font-size: 95%;
-    opacity: 0.7;
+    font-size: 80%;
+    opacity: 0.8;
     color: #FFFFFF;
 }
 @media (max-width: 900px) {
     .fooder_fooder{
-        padding-top: 8%;
-        font-size: 170%;
+        font-size: 180%;
+        font-weight: 300;
     }
 }
