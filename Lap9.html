@@ -1,29 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>lab9</title>
-    <link rel="stylesheet" href="css/Lab9.css">
+    <link rel="stylesheet" type="text/css" href="css/Lab9.css">
 </head>
         <body>
 
                 <h1 class="tieude">Xác định vị trí trong Tabs</h1>
 
                 <div class="container">
-                    <button class="btn" onclick="popup1()">Home</button>
-                    <button class="btn" onclick="popup2()">Profile</button>
-                    <button class="btn" onclick="popup3()">Massager</button>
-                    <button class="btn" onclick="popup4()">Setting</button>
+                    <button class="btn" onclick="openPopup">Home</button>
+                    <button class="btn" onclick="openPopup">Profile</button>
+                    <button class="btn" onclick="openPopup">Massager</button>
+                    <button class="btn" onclick="openPopup">Setting</button>
                     <br>
                     <br>
                     <br>
                     <br>
-                    <div id="popup1" onclick="closePopup()">This home content</div>
-                    <div id="popup2" onclick="closePopup()">This profile content</div>
-                    <div id="popup3" onclick="closePopup()">This massager content</div>
-                    <div id="popup4" onclick="closePopup()">This setting content</div>
+                    <div id="popup1" class="popup">This home content</div>
+                    <div id="popup2" class="popup">This profile content</div>
+                    <div id="popup3" class="popup">This massager content</div>
+                    <div id="popup4" class="popup">This setting content</div>
                 </div>
                 <script type="text/javascript">
+                    function openPopup() {
+                        var i, btn, popup;
+                        btn = document.getElementsByClassName("btn");
+                        for (i = 0; i < btn.length; i++) {
+                            btn[i].style.display = "none";
+                        }
+                        document.getElementById(pageName).style.display = "block";
+                        elmnt.style.backgroundColor = color;
+                    }
+                    document.getElementById("defaultOpen").click();
                     function popup1() {
                         document.getElementById("popup1").style.display="block";
                         document.getElementById("popup2").style.display="none";

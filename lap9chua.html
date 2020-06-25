@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/lap9chua.css">
+</head>
+<body>
+        <ul class="tabs">
+            <li><a  href="javascript:void(0)" onclick="navTab(0)">Home</a> </li>
+<!-- href="#home"     href="#profile"   href="#massages"   href="#setting"  &ndash;&gt;-->
+            <li><a href="javascript:void(0)" onclick="navTab(1)">Profile</a> </li>
+            <li><a href="javascript:void(0)" onclick="navTab(2)">Massages</a> </li>
+            <li><a href="javascript:void(0)" onclick="navTab(3)">Setting</a> </li>
+        </ul>
+<div class="content">
+    <div class="content_all" id="content_all">
+        <div id="home" class="tab_content">Home content</div>
+        <div id="profile" class="tab_content">Profile content</div>
+        <div id="massages" class="tab_content">Massages content</div>
+        <div id="setting" class="tab_content">Setting content</div>
+    </div>
+</div>
+<script type="text/javascript">
+    function navTab(e) {
+        // let tabs = document.getElementsByClassName("tab_content");
+        // for (let i=0 ; i<tabs.length; i++ ){
+        //     tabs[i].style.display = "none";
+        // }
+        // let  id = e.getAttribute("href");
+        // id= id.replace("#","");
+        // document.getElementById(id).style.display="block";
+        document.getElementById("content_all").style.transform= "translateX(-"+(e*400)+"px)";
+    }
+    // setTimeout(function () {
+    //         alert("co nguoi dot nhap");
+    // },3000);
+    // let f=0;
+    // var stv = setInterval(function () {
+    //     alert("mot nguoi vao web");
+    //     f++;
+    //     if(f>4){
+    //         clearInterval(stv);
+    //     }
+    // },3000);
+</script>
+</body>
+</html>

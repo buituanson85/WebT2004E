@@ -1,0 +1,11 @@
+body{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    padding-top: 300px;
+    font-size: 30px;
+}
+.time{
+    border: 1px solid #171717;
+    text-align: center;
+}
