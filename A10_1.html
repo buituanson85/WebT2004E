@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A10_1</title>
+    <link rel="stylesheet" type="text/css" href="css/A10_1.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<div class="slide">
+    <div class="dieu_huong">
+        <i onclick="back();" style="font-size:24px" class="fa">&#xf137;</i>
+        <i onclick="next();" style="font-size:24px" class="fa">&#xf138;</i>
+    </div>
+    <div class="chuyen-slide">
+        <img src="imgs/novelties_1.png" alt="a">
+        <img src="imgs/novelties_2.png" alt="aaa">
+        <img src="imgs/novelties_3.png" alt="aa">
+        <img src="imgs/novelties__4.png" alt="aaaa">
+        <img src="imgs/novelties_5.png" alt="aaaa">
+    </div>
+    <script type="text/javascript">
+        var kichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
+        var ChuyenSlide = document.getElementsByClassName("chuyen-slide")[0];
+        var img = ChuyenSlide.getElementsByTagName("img");
+        var Max = kichThuoc*img.length;
+            Max-=kichThuoc;
+        var Chuyen = 0;
+        function next() {
+            if ( Chuyen < Max){
+                Chuyen+= kichThuoc;
+            }else{
+                Chuyen = 0;
+            }
+            ChuyenSlide.style.marginLeft = '-'+ Chuyen + 'px';
+        }
+        function back() {
+            if (Chuyen == 0 ){
+                Chuyen = Max;
+            }else{
+                Chuyen -= kichThuoc;
+            }
+            ChuyenSlide.style.marginLeft = '-'+ Chuyen + 'px';
+        }
+    </script>
+</div>
+</body>
+</html>

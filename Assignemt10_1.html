@@ -11,15 +11,79 @@
 
 </head>
 <body>
-<div class="arrow">
-        <div class="arrow_left">
-            <i class="left_arrow"> </i>
-            <i class="left_line"> </i>
-        </div>
-    <div class="arrow_right">
-        <i class="right_arrow"> </i><br>
-        <i class="right_line"> </i>
-    </div>
+        <div class="slideshow">
+            <div class="arrow">
+                <div onclick="prev()">
+                    <a href="#">
+                        <i class="left_arrow"> </i>
+                        <i class="left_line"> </i>
+                    </a>
+                </div>
+                <div onclick="next()">
+                    <a href="#">
+                        <i class="right_arrow"> </i><br>
+                        <i class="right_line"> </i>
+                    </a>
+                </div>
+            </div>
+         <div class="slideshow-container">
+             <div class="mySlides fade" >
+                 <img class="tab_content" src="imgs/novelties_1.png" alt="a10">
+             </div>
+             <div class="mySlides fade">
+                 <img class="tab_content" src="imgs/novelties_2.png" alt="a102">
+             </div>
+             <div class="mySlides fade">
+                 <img class="tab_content" src="imgs/novelties_3.png" alt="a102">
+             </div>
+             <div class="mySlides fade">
+                 <img class="tab_content" src="imgs/novelties__4.png" alt="a102">
+             </div>
+             <div class="mySlides fade">
+                 <img class="tab_content" src="imgs/novelties_5.png" alt="a102">
+             </div>
+         </div>
 </div>
+
+<script type="text/javascript">
+    var size = document.getElementsByClassName("slideshow")[0].clientWidth;
+    var movesSlide = document.getElementsByClassName("slideshow-container")[0];
+    var img = movesSlide.getElementsByTagName("img");
+    var Max = size*img.length;
+    Max-= size;
+    var moves = 0;
+    function next() {
+        if ( moves < Max){
+            moves += size;
+        }else{
+            moves = 0;
+        }
+        movesSlide.style.marginLeft = '-'+ moves + 'px';
+    }
+    function prev() {
+        if (moves == 0 ){
+            moves = Max;
+        }else{
+            moves -= size;
+        }
+        movesSlide.style.marginLeft = '-'+ moves + 'px';
+    }
+    // var slideIndex = 1;
+    // showSlides(slideIndex);
+    // function plusSlides(n) {
+    //     showSlides(slideIndex += n);
+    // }
+    // function showSlides(n) {
+    //     var slides = document.getElementsByClassName("mySlides");
+    //     if (n > slides.length) {slideIndex = 1}
+    //     if (n < 1) {slideIndex = slides.length}
+    //     for (let i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+    //     slides[slideIndex-1].style.display = "block";
+    // }
+</script>
+
 </body>
 </html>
+

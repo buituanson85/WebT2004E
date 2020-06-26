@@ -5,7 +5,7 @@
 }
 body {
     font-family: GothamPro, sans-serif;
-   background-color: #cccccc;
+    background-color: #cccccc;
     line-height: 1.5;
     letter-spacing: 0.1vw;
     word-spacing: 0.1vw;
@@ -30,6 +30,7 @@ img{
 .left_arrow{
     border: solid red;
     border-width: 0 3px 3px 0;
+    margin-left: 3px;
     padding: 10px;
     transform: rotate(135deg);
     display: inline-block;
@@ -61,3 +62,25 @@ img{
     left: 5px;
     top: 68px;
 }
+
+.prev:hover, .next:hover {
+    border: 1px dotted red;
+}
+.slideshow {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+img{
+    width: 1000px;
+    height: 700px;
+    float: left;
+}
+.slideshow-container{
+    width: 9999px;
+    transition: all 500ms;
+}
+
+
