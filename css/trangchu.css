@@ -208,17 +208,31 @@ img{
 .header_picture_maim{
     width: 200%;
     height: 54vw;
+    transition: all 1000ms;
     display: flex;
+    position: relative;
 }
 .header_picture_maim_left{
     width: 100%;
     height: 54vw;
     background-image: linear-gradient(black, #f52d2d,black,black);
 }
+.header_picture_maim_left_picture{
+    width: 48.8vw;
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
 .header_picture_maim_right{
     width: 100%;
-    height: 54vw;
+    height: 54vw;;
     background-image: linear-gradient(black, #22d25d,black,black);
+}
+.header_picture_maim_right_picture{
+    width: 48.8vw;
+    position: absolute;
+    left: 70%;
+    top: 0;
 }
 /*    background-image: linear-gradient(black, #f52d2d,black,black);*/
 /*key thuc the header_picture*/
