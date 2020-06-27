@@ -11,6 +11,7 @@
 </head>
         <body>
         <div class="container">
+            <!-- bắt đầu the header-->
             <div class="header">
                 <div class="header_left">
                     <div class="header_menu">
@@ -32,7 +33,8 @@
                     <div class="header_right_icon3"><a href="#"><i  class="fa">&#xf290;</i></a></div>
                 </div>
             </div>
-
+            <!-- kết thúc the header-->
+            <!-- bắt đầu the header_picture-->
             <div class="header_picture">
                 <div class="header_picture_menu">
                       <div class="header_picture_maim" id="content_all_2">
@@ -48,6 +50,8 @@
                           </div>
                       </div>
                 </div>
+                <!-- kết thúc the header_picture-->
+                <!-- bắt đầu the header_bottom-->
                 <div class="header_picture_bottom" >
                     <div class="header_picture_bottom_main">
                         <div class="header_picture_bottom_menu" id="content_all_1">
@@ -66,7 +70,7 @@
                     <div class="header_picture_bottom_arrow">
                         <div class="header_picture_bottom_arrow_left">
                             <div class="header_picture_bottom_arrow_left_left">
-                                <a href="#">
+                                <a href="#" onclick="prev()">
                                     <div class="header_picture_bottom_arrow_left_left_arrow"></div>
                                     <div class="header_picture_bottom_arrow_left_left_line"></div>
                                 </a>
@@ -80,7 +84,7 @@
                             <div>
                             </div>
                             <div class="header_picture_bottom_arrow_left_right">
-                                <a href="#">
+                                <a href="#" onclick="next()">
                                     <div class="header_picture_bottom_arrow_left_right_arrow"></div>
                                     <div class="header_picture_bottom_arrow_left_right_line"></div>
                                 </a>
@@ -98,6 +102,277 @@
                     document.getElementById("content_all_2").style.transform ="translateX(-"+(e*1519.2)+"px)";
                 }
             </script>
+<!--            <script type="text/javascript">-->
+<!--                var size = document.getElementsByClassName("header_picture_menu")[0].clientWidth;-->
+<!--                var movesSlide = document.getElementsByClassName("header_picture_maim")[0];-->
+<!--                var img = movesSlide.getElementsByTagName("img");-->
+<!--                var Max = size*img.length;-->
+<!--                Max-= size;-->
+<!--                var moves = 0;-->
+<!--                function next() {-->
+<!--                    if ( moves < Max){-->
+<!--                        moves += size;-->
+<!--                    }else{-->
+<!--                        moves = 0;-->
+<!--                    }-->
+<!--                    movesSlide.style.marginLeft = '-'+ moves + 'px';-->
+<!--                }-->
+<!--                function prev() {-->
+<!--                    if (moves == 0 ){-->
+<!--                        moves = Max;-->
+<!--                    }else{-->
+<!--                        moves -= size;-->
+<!--                    }-->
+<!--                    movesSlide.style.marginLeft = '-'+ moves + 'px';-->
+<!--                }-->
+<!--            </script>-->
+<!-- het the header_bottom-->
+            <!-- bắt đầu the main_find-->
+            <div class="main_find">
+                <div class="main_find_left">
+                    <a class="main_find_link" href="#"><span class="main_find_link_span_left">find your hublot watch</span></a>
+                </div>
+                <div class="main_find_center">
+                    <a class="main_find_link" href="#"><span class="main_find_link_span_center">find a boutique</span></a>
+                </div>
+                <div class="main_find_right">
+                    <a class="main_find_link" href="#"><span class="main_find_link_span_right">find your strap</span></a>
+                </div>
+            </div>
+            <!-- het the main_find-->
+            <!-- bắt đầu the videos-->
+            <div class="main-video">
+                <video width="100%" autoplay id="main-video_myVideo" poster="imgs/video_buttom_1.jpg">
+                    <source type="video/mp4" src="audio/main-video_1.mp4">
+                </video>
+                <div id="main-video_content">
+                    <button id="main-video_myBtn" onclick="myFunction()">Pause</button>
+                </div>
+                <script>
+                    var video = document.getElementById("main-video_myVideo");
+                    var btn = document.getElementById("main-video_myBtn");
+                    function myFunction() {
+                        if (video.paused) {
+                            video.play();
+                            btn.innerHTML = "Pause";
+                        } else {
+                            video.pause();
+                            btn.innerHTML = "Play";
+                        }
+                    }
+                </script>
+            </div>
+            <!-- het the videos-->
+            <!-- bắt đầu thẻ header watcher-->
+            <div class="header_watches">
+                <span class="header_watcher_span">EXPLORE WATCHES</span>
+            </div>
+            <!-- kết thúc thẻ header watcher-->
+            <!--bắt đầu thẻ nav-->
+            <div class="nav">
+                <div class="nav_content">
+                    <a href="#">
+                        <div class="nav_content_top">
+                            <figure>
+                                <img class="mySlides_novelties w3-animate-fading" src="imgs/novelties_1.png" alt="novelties">
+                                <img class="mySlides_novelties w3-animate-fading" src="imgs/novelties_2.png" alt="novelties">
+                                <img class="mySlides_novelties w3-animate-fading" src="imgs/novelties_3.png" alt="novelties">
+                                <img class="mySlides_novelties w3-animate-fading" src="imgs/novelties__4.png" alt="novelties">
+                                <img class="mySlides_novelties w3-animate-fading" src="imgs/novelties_5.png" alt="novelties">
+                                <script>
+                                    var myIndex = 0;
+                                    carousel();
+                                    function carousel() {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides_novelties");
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        myIndex++;
+                                        if (myIndex > x.length) {myIndex = 1}
+                                        x[myIndex-1].style.display = "block";
+                                        setTimeout(carousel, 20000);
+                                    }
+                                </script>
+                            </figure>
+                        </div>
+                        <div class="nav_content_center"></div>
+                        <div class="nav_content_bottom">novelties</div>
+                    </a>
+                </div>
+
+                <div class="nav_content">
+                    <a href="#">
+                        <div class="nav_content_top">
+                            <figure>
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_1.png" alt="big bang">
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_2.png" alt="big bang">
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_3.png" alt="big bang">
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_4.png" alt="big bang">
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_5.png" alt="big bang">
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_6.png" alt="big bang">
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_7.png" alt="big bang">
+                                <img class="mySlides_bigbang w3-animate-fading" src="imgs/bigbang_8.png" alt="big bang">
+                                <script>
+                                    var myIndex = 0;
+                                    carousel();
+                                    function carousel() {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides_bigbang");
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        myIndex++;
+                                        if (myIndex > x.length) {myIndex = 1}
+                                        x[myIndex-1].style.display = "block";
+                                        setTimeout(carousel, 20000);
+                                    }
+                                </script>
+                            </figure>
+                        </div>
+                        <div class="nav_content_center"></div>
+                        <div class="nav_content_bottom">big bang</div>
+                    </a>
+                </div>
+
+                <div class="nav_content">
+                    <a href="#">
+                        <div class="nav_content_top">
+                            <figure>
+                                <img class="mySlides_classicfusion w3-animate-fading" src="imgs/classicfusion_1.png" alt="classicfusion">
+                                <img class="mySlides_classicfusion w3-animate-fading" src="imgs/classicfusion_3.png" alt="classicfusion">
+                                <img class="mySlides_classicfusion w3-animate-fading" src="imgs/classicfusion_4.png" alt="classicfusion">
+                                <img class="mySlides_classicfusion w3-animate-fading" src="imgs/classicfusion_5.png" alt="classicfusion">
+                                <script>
+                                    var myIndex = 0;
+                                    carousel();
+                                    function carousel() {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides_classicfusion");
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        myIndex++;
+                                        if (myIndex > x.length) {myIndex = 1}
+                                        x[myIndex-1].style.display = "block";
+                                        setTimeout(carousel, 20000);
+                                    }
+                                </script>
+                            </figure>
+                        </div>
+                        <div class="nav_content_center"></div>
+                        <div class="nav_content_bottom">classic fusion</div>
+                    </a>
+                </div>
+
+                <div class="nav_content">
+                    <a href="#">
+                        <div class="nav_content_top">
+                            <figure>
+                                <img class="mySlides_spirit w3-animate-fading" src="imgs/spirit_1.png" alt="spirit">
+                                <img class="mySlides_spirit w3-animate-fading" src="imgs/spirit_2.png" alt="spirit">
+                                <img class="mySlides_spirit w3-animate-fading" src="imgs/spirit_3.png" alt="spirit">
+                                <img class="mySlides_spirit w3-animate-fading" src="imgs/spirit_4.png" alt="spirit">
+                                <img class="mySlides_spirit w3-animate-fading" src="imgs/spirit_5.png" alt="spirit">
+                                <script>
+                                    var myIndex = 0;
+                                    carousel();
+                                    function carousel() {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides_spirit");
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        myIndex++;
+                                        if (myIndex > x.length) {myIndex = 1}
+                                        x[myIndex-1].style.display = "block";
+                                        setTimeout(carousel, 20000);
+                                    }
+                                </script>
+                            </figure>
+                        </div>
+                        <div class="nav_content_center"></div>
+                        <div class="nav_content_bottom">spirit of big bang</div>
+                    </a>
+                </div>
+
+                <div class="nav_content">
+                    <a href="#">
+                        <div class="nav_content_top">
+                            <figure>
+                                <img class="mySlides_mp w3-animate-fading" src="imgs/mp_1.png" alt="mp">
+                                <img class="mySlides_mp w3-animate-fading" src="imgs/mp_2.png" alt="mp">
+                                <script>
+                                    var myIndex = 0;
+                                    carousel();
+                                    function carousel() {
+                                        var i;
+                                        var x = document.getElementsByClassName("mySlides_mp");
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        myIndex++;
+                                        if (myIndex > x.length) {myIndex = 1}
+                                        x[myIndex-1].style.display = "block";
+                                        setTimeout(carousel, 60000);
+                                    }
+                                </script>
+                            </figure>
+                        </div>
+                        <div class="nav_content_center"></div>
+                        <div class="nav_content_bottom" >mp</div>
+                    </a>
+                </div>
+
+            </div>
+            <!--kết thúc thẻ nav-->
+            <!--bắt đầu thẻ main_ourworld-->
+
+            <div class="main_ourworld">
+                <div class="main_ourworld_content_left">
+                    <div class="main_ourworld_content_left_top">
+                        <img src="imgs/Our_World_Craftsmanship_Listing.jpg" alt="Our_World_Craftsmanship_Listing">
+                    </div>
+                    <div class="main_ourworld_content_left_bottom">
+                        <div class="main_ourworld_content_left_bottom_main">
+                            <div class="main_ourworld_content_left_bottom_content"><span class="main_ourworld_content_left_bottom_content_span">our world</span></div>
+                            <div></div>
+                            <div class="main_ourworld_content_left_bottom_content"><a href="#" class="main_ourworld_content_left_bottom_content_craftsmanship"><span>craftsmanship</span></a></div>
+                            <div class="main_ourworld_content_left_bottom_content"><a href="#" class="main_ourworld_content_left_bottom_content_learmore"><span class="main_ourworld_content_left_bottom_content_span_learmore">learn more</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_ourworld_content_right">
+                    <div class="main_ourworld_content_right_top">
+                        <img src="imgs/Our_World_Partnerships_Listing_02.jpg" alt="Our_World_Craftsmanship_Listing">
+                    </div>
+                    <div class="main_ourworld_content_right_bottom">
+                        <div class="main_ourworld_content_right_bottom_main">
+                            <div class="main_ourworld_content_right_bottom_content"><span class="main_ourworld_content_right_bottom_content_span">our world</span></div>
+                            <div></div>
+                            <div class="main_ourworld_content_right_bottom_content"><a href="#" class="main_ourworld_content_right_bottom_content_partnerships"><span>partnerships</span></a></div>
+                            <div class="main_ourworld_content_right_bottom_content"><a href="#" class="main_ourworld_content_right_bottom_content_learmore"><span class="main_ourworld_content_right_bottom_content_span_learmore">learn more</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--kết thúc thẻ main_ourworld-->
+            <!--bắt đầu thẻ main_music-->
+            <div class="main_music">
+                <div class="main_music_top">
+                    <img src="imgs/artmusic.jpg" alt="artmusic">
+                </div>
+                <div class="main_music_bottom">
+                    <div class="main_music_bottom_main">
+                        <div class="main_music_bottom_content"><span class="main_music_bottom_content_artmusic">art & music</span></div>
+                        <div ></div>
+                        <div class="main_music_bottom_content"><span class="main_music_bottom_content_richardorlinski">richard orlinski</span></div>
+                        <div class="main_music_bottom_content"><a href="#" class="main_music_bottom_content_link"><span class="main_music_bottom_content_link_learmore">learn more</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <!--kết thúc thẻ main_music-->
+            <!--bắt đầu thẻ last new-->
         </div>
         </body>
 </html>
