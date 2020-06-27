@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>As10_2</title>
+    <link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/As10_2.css" >
+</head>
+<body>
+        <div class="container">
+                <div class="container_main">
+                    <svg class="circle" >
+                        <circle cx="15vw" cy="15vw" r="12vw" stroke="black" stroke-width="3" fill="white" />
+                    </svg>
+                    <span class="one">1</span>
+                    <span class="two">2</span>
+                    <span class="three">3</span>
+                    <span class="four">4</span>
+                    <span class="five">5</span>
+                    <span class="six">6</span>
+                    <span class="seven">7</span>
+                    <span class="eight">8</span>
+                    <span class="nine">9</span>
+                    <span class="ten">10</span>
+                    <span class="eleven">11</span>
+                    <span class="twelve">12</span>
+                    <svg class="circle_main" >
+                        <circle cx="0.8vw" cy="0.8vw" r="0.5vw" stroke="black" stroke-width="3" fill="white" />
+                    </svg>
+                    <div class="arrow">
+                                <div > </div>
+                        <i onclick="startClock()" id="arrow_sec" style='font-size:36px' class='fas'>&#xf062;</i>
+                                <div class="arrow_minute" onclick="startClock()" id="arrow_minute"> </div>
+                     </div>
+        </div>
+<script type="text/javascript">
+    function startClock() {
+        let min=59;
+        let sec=59;
+        let clock = setInterval(function () {
+            document.getElementById("arrow_sec").style.transform= "rotate(6deg)";
+            sec--;
+            if ( sec<0 ){
+                document.getElementById("arrow_minute").style.transform= "rotate(6deg)";
+                sec=59;
+            }
+
+        },10)
+    }
+</script>
+</body>
+</html>

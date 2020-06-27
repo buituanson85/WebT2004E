@@ -5,13 +5,13 @@
 }
 body {
     font-family: GothamPro, sans-serif;
-    background-color: #cccccc;
     line-height: 1.5;
     letter-spacing: 0.1vw;
     word-spacing: 0.1vw;
     font-size: 0.85vw;
     width: 1200px;
     margin: 0 auto;
+    background-color: #171717;
 }
 
 a{
@@ -45,6 +45,7 @@ img{
     top: 40px;
 }
 .right_arrow{
+
     border: solid red;
     border-width: 0 3px 3px 0;
     padding: 10px;
@@ -77,6 +78,7 @@ img{
     width: 1000px;
     height: 700px;
     float: left;
+    background-color: #171717;
 }
 .slideshow-container{
     width: 9999px;

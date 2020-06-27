@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: GothamPro, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #cccccc;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+    font-size: 0.85vw; /*vw ko đổi hiển thị chữ khi zoom to nhỏ màn hình đi kèm với thẻ viewport*/
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 30vw;
+    margin: 0 auto;
+}
+.container_main{
+    width: 30vw;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+}
+.circle{
+   width: 30vw;
+    height: 30vw;
+}
+.one{
+    font-size: 3vw;
+    position: absolute;
+    top: 4vw;
+    left: 20vw;
+}
+.two{
+    font-size: 3vw;
+    position: absolute;
+    top: 7vw;
+    left: 23vw;
+}
+.three{
+    font-size: 3vw;
+    position: absolute;
+    top: 12vw;
+    left: 25vw;
+}
+.four{
+    font-size: 3vw;
+    position: absolute;
+    top: 17.5vw;
+    left: 23.5vw;
+}
+.five{
+    font-size: 3vw;
+    position: absolute;
+    top: 21.5vw;
+    left: 19.5vw;
+}
+.six{
+    font-size: 3vw;
+    position: absolute;
+    top: 23vw;
+    left: 14vw;
+}
+.seven{
+    font-size: 3vw;
+    position: absolute;
+    top: 21.5vw;
+    left: 8.5vw;
+}
+.eight{
+    font-size: 3vw;
+    position: absolute;
+    top: 17.5vw;
+    left: 4.5vw;
+}
+.nine{
+    font-size: 3vw;
+    position: absolute;
+    top: 12vw;
+    left: 3vw;
+}
+.ten{
+    font-size: 3vw;
+    position: absolute;
+    top: 7vw;
+    left: 5.5vw;
+}
+.eleven{
+    font-size: 3vw;
+    position: absolute;
+    top: 4vw;
+    left: 9vw;
+}
+.twelve{
+    font-size: 3vw;
+    position: absolute;
+    top: 2.5vw;
+    left: 13.5vw;
+}
+.circle_main{
+    position: absolute;
+    top: 14vw;
+    left: 14vw;
+}
+.arrow{
+    width: 50px;
+    height: 100px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.arrow_sec{
+
+}
+
+.fas{
+
+}
+
+.arrow_minute{
+    border: solid red;
+    border-width: 6px 0 0 0;
+    padding-right: 50px;
+    position: absolute;
+    top: -15.5vw;
+    left: 15vw;
+}
+

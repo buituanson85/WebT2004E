@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hublot</title>
+    <link rel="stylesheet" href="css/trangchu.css"/>
+    <link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+        <body>
+        <div class="container">
+            <div class="header">
+                <div class="header_left">
+                    <div class="header_menu">
+                        <a href="#"><i style="font-size:2.4vw" class="fa">&#xf0c9;</i></a>
+                    </div>
+                    <div class="header_left_logo">
+                        <a href="#"><img src="imgs/logoHublot.jpg" alt="logo"></a>
+                    </div>
+                    <div class="header_left_name">
+                        <div class="header_left_watches"><a href="#"><span class="header_left_name_span">watches</span></a></div>
+                        <div class="header_left_ourworld"><a href="#"><span class="header_left_name_span">our world</span></a></div>
+                        <div class="header_left_boutiques"><a href="#"><span class="header_left_name_span">boutiques</span></a></div>
+                    </div>
+                </div>
+                <div class="header_right">
+                    <div class="header_right_hub"><a href="#">hublotista</a></div>
+                    <div class="header_right_icon1"><a href="#"><i class="fa">&#xf08a;</i></a></div>
+                    <div class="header_right_icon2"><a href="#"><i  class='fas'>&#xf002;</i></a></div>
+                    <div class="header_right_icon3"><a href="#"><i  class="fa">&#xf290;</i></a></div>
+                </div>
+            </div>
+
+            <div class="header_picture">
+                <div class="header_picture_menu">
+                      <div class="header_picture_maim" id="content_all_3">
+                          <div class="header_picture_maim_left"></div>
+                          <div class="header_picture_maim_right"></div>
+                      </div>
+                </div>
+                <div class="header_picture_bottom" >
+                    <div class="header_picture_bottom_main">
+                        <div class="header_picture_bottom_menu" id="content_all_1">
+                            <div class="header_picture_bottom_left">
+                                <div class="header_picture_bottom_bigbang"><span>big bang</span></div>
+                                <div class="header_picture_bottom_etitanium"><span>e titanium</span></div>
+                                <div class="header_picture_bottom_discovermore"><a href="#"><span>discover more</span></a></div>
+                            </div>
+                            <div class="header_picture_bottom_right">
+                                <div class="header_picture_bottom_bigbang"><span>big bang</span></div>
+                                <div class="header_picture_bottom_etitanium"><span>e black<br>ceramic</span></div>
+                                <div class="header_picture_bottom_discovermore"><a href="#"><span>discover more</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header_picture_bottom_arrow">
+                        <div class="header_picture_bottom_arrow_left">
+                            <div class="header_picture_bottom_arrow_left_left">
+                                <a href="#">
+                                    <div class="header_picture_bottom_arrow_left_left_arrow"></div>
+                                    <div class="header_picture_bottom_arrow_left_left_line"></div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" onclick="navTab(0)"><div class="header_picture_bottom_arrow_left_left_center_left"></div></a>
+                            </div>
+                            <div>
+                               <a href="javascript:void(0)" onclick="navTab(1)"> <div class="header_picture_bottom_arrow_left_left_center_right"></div></a>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="header_picture_bottom_arrow_left_right">
+                                <a href="#">
+                                    <div class="header_picture_bottom_arrow_left_right_arrow"></div>
+                                    <div class="header_picture_bottom_arrow_left_right_line"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header_picture_bottom_arrow_center"></div>
+                        <div class="header_picture_bottom_arrow_center"></div>
+                        <div class="header_picture_bottom_arrow_right"></div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function navTab(e) {
+                    document.getElementById("content_all_1").style.transform= "translateX(-"+(e*410.8)+"px)";
+                    document.getElementById("content_all_2").style.transform= "translateX(-"+(e*736.56)+"px)";
+                    document.getElementById("content_all_3").style.transform ="translateX(-"+(e*1519.2)+"px)";
+                    document.getElementById("content_all_3").style.backgroundImage= "linear-gradient(black, #22d25d,black,black)";
+                }
+            </script>
+        </div>
+        </body>
+</html>

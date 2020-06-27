@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="css/lap10.css">
 </head>
 <body>
-<input type="number" min="0" id="inputTime">
+<!--<input type="number" min="0" id="inputTime">-->
 <p><span id="min">10</span>:<span id="sec">00</span></p>
 <button onclick="startClock();" >Start</button>
      <script type="text/javascript">
          function startClock() {
-             let min = parseInt(document.getElementById("inputTime").value);
-             if (isNaN(min)){
-                 alert("Nhap sai");
-                 return;
-             }
+         //     let min = parseInt(document.getElementById("inputTime").value);
+         //     if (isNaN(min)){
+         //         alert("Nhap sai");
+         //         return;
+         //     }
              let min=9;
              let sec=59;
              let clock= setInterval(function () {
