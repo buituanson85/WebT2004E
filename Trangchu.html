@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Hublot</title>
-    <link rel="stylesheet" href="css/trangchu.css"/>
+    <link rel="stylesheet" type="text/css" href="css/trangchu.css"/>
     <link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -35,97 +35,65 @@
             </div>
             <!-- kết thúc the header-->
             <!-- bắt đầu the header_picture-->
-            <div class="header_picture">
-                <div class="header_picture_menu">
-                      <div class="header_picture_maim" id="content_all_2">
-                          <div class="header_picture_maim_left">
-                             <div class="header_picture_maim_left_picture">
-                                 <img src="imgs/A10_1.png" alt="a101">
-                             </div>
-                          </div>
-                          <div class="header_picture_maim_right">
-                              <div class="header_picture_maim_right_picture">
-                                  <img src="imgs/A10_2.png" alt="a102">
-                              </div>
-                          </div>
-                      </div>
-                </div>
-                <!-- kết thúc the header_picture-->
-                <!-- bắt đầu the header_bottom-->
-                <div class="header_picture_bottom" >
-                    <div class="header_picture_bottom_main">
-                        <div class="header_picture_bottom_menu" id="content_all_1">
-                            <div class="header_picture_bottom_left">
-                                <div class="header_picture_bottom_bigbang"><span>big bang</span></div>
-                                <div class="header_picture_bottom_etitanium"><span>e titanium</span></div>
-                                <div class="header_picture_bottom_discovermore"><a href="#"><span>discover more</span></a></div>
-                            </div>
-                            <div class="header_picture_bottom_right">
-                                <div class="header_picture_bottom_bigbang"><span>big bang</span></div>
-                                <div class="header_picture_bottom_etitanium"><span>e black<br>ceramic</span></div>
-                                <div class="header_picture_bottom_discovermore"><a href="#"><span>discover more</span></a></div>
-                            </div>
-                        </div>
+            <div class="container_picture">
+                <div class="mySlides" id="mySlides_top">
+                    <div class="numbertext" id="numbertext_top">
+                        <p class="numbertext_bigbang"><span>big bang</span></p>
+                        <p class="numbertext_etitanium"><span>e black<br>ceramic</span></p>
+                        <p class="numbertext_discovermore"><a href="#"><span>discover more</span></a></p>
                     </div>
-                    <div class="header_picture_bottom_arrow">
-                        <div class="header_picture_bottom_arrow_left">
-                            <div class="header_picture_bottom_arrow_left_left">
-                                <a href="#" onclick="prev()">
-                                    <div class="header_picture_bottom_arrow_left_left_arrow"></div>
-                                    <div class="header_picture_bottom_arrow_left_left_line"></div>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="javascript:void(0)" onclick="navTab(0)"><div class="header_picture_bottom_arrow_left_left_center_left"></div></a>
-                            </div>
-                            <div>
-                               <a href="javascript:void(0)" onclick="navTab(1)"> <div class="header_picture_bottom_arrow_left_left_center_right"></div></a>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="header_picture_bottom_arrow_left_right">
-                                <a href="#" onclick="next()">
-                                    <div class="header_picture_bottom_arrow_left_right_arrow"></div>
-                                    <div class="header_picture_bottom_arrow_left_right_line"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header_picture_bottom_arrow_center"></div>
-                        <div class="header_picture_bottom_arrow_center"></div>
-                        <div class="header_picture_bottom_arrow_right"></div>
+                    <img src="imgs/A10_1.png" alt="A101">
+                </div>
+                <div class="mySlides" id="mySlides_bottom">
+                    <div class="numbertext" id="numbertext_bottom">
+                        <p class="numbertext_bigbang"><span>big bang</span></p>
+                        <p class="numbertext_etitanium"><span>e titanium</span></p>
+                        <p class="numbertext_discovermore"><a href="#"><span>discover more</span></a></p>
+                    </div>
+                    <img id="container_picture_img" src="imgs/A10_2.png" alt="A102">
+                </div>
+                <a href="#" class="prev" onclick="plusSlides(-1)">
+                    <div class="prev_arrow"></div>
+                    <div class="prev_line"></div>
+                </a>
+                <a href="#" class="next" onclick="plusSlides(1)">
+                    <div class="next_arrow"></div>
+                    <div class="next_line"></div>
+                </a>
+                <div class="row">
+                    <div class="column">
+                        <a class="demo cursor" onclick="currentSlide(1)"><div class="demo_1"></div> </a>
+                    </div>
+                    <div class="column">
+                        <a class="demo cursor" onclick="currentSlide(2)"><div class="demo_1"></div></a>
                     </div>
                 </div>
             </div>
-            <script type="text/javascript">
-                function navTab(e) {
-                    document.getElementById("content_all_1").style.transform= "translateX(-"+(e*410.8)+"px)";
-                    document.getElementById("content_all_2").style.transform ="translateX(-"+(e*1519.2)+"px)";
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
                 }
             </script>
-<!--            <script type="text/javascript">-->
-<!--                var size = document.getElementsByClassName("header_picture_menu")[0].clientWidth;-->
-<!--                var movesSlide = document.getElementsByClassName("header_picture_maim")[0];-->
-<!--                var img = movesSlide.getElementsByTagName("img");-->
-<!--                var Max = size*img.length;-->
-<!--                Max-= size;-->
-<!--                var moves = 0;-->
-<!--                function next() {-->
-<!--                    if ( moves < Max){-->
-<!--                        moves += size;-->
-<!--                    }else{-->
-<!--                        moves = 0;-->
-<!--                    }-->
-<!--                    movesSlide.style.marginLeft = '-'+ moves + 'px';-->
-<!--                }-->
-<!--                function prev() {-->
-<!--                    if (moves == 0 ){-->
-<!--                        moves = Max;-->
-<!--                    }else{-->
-<!--                        moves -= size;-->
-<!--                    }-->
-<!--                    movesSlide.style.marginLeft = '-'+ moves + 'px';-->
-<!--                }-->
-<!--            </script>-->
 <!-- het the header_bottom-->
             <!-- bắt đầu the main_find-->
             <div class="main_find">
@@ -373,6 +341,135 @@
             </div>
             <!--kết thúc thẻ main_music-->
             <!--bắt đầu thẻ last new-->
+            <div class="header_lastnew">
+                <span class="header_lastnew_span">latest news</span>
+            </div>
+            <div class="container_lastnew">
+                <div class="container_lastnew_picture1">
+                    <a href="#"><img src="imgs/news1.jpg" alt="new"></a>
+                </div>
+                <div class="container_lastnew_picture2">
+                    <a href="#"><img src="imgs/new2.png" alt="new"></a>
+                </div>
+                <div class="container_lastnew_picture3">
+                    <a href="#"><img src="imgs/new3.jpg" alt="new"></a>
+                </div>
+                <div class="icon_itram"><a href="https://www.instagram.com/p/CByUOkHp-D7/" target="_blank"><i style="font-size:2.5vw; color: #FFFFFF" class="fa">&#xf16d;</i></a></div>
+            </div>
+            <div  class="container_lastnew_main">
+                <div class="container_lastnew_main1">
+                    <a href="#">
+                        <span>CLASSIC FUSION AEROFUSION<br>
+                            CHRONOGRAPH SPECIAL EDITION<br>
+                            ‘BOUTIQUE MONACO’</span>
+                    </a>
+                    <div class="container_lastnew_main1_line"></div>
+                    <div class="container_lastnew_main1_span">
+                        <span>Hublot celebrates the 1st anniversary of its boutique<br>
+                            in Monaco and pays tribute to the Principality’s<br>
+                            colours with the Classic Fusion Aerofusion<br>
+                            Chronograph Special Edition ‘Boutique Monaco’</span>
+                    </div>
+                </div>
+                <div class="container_lastnew_main2">
+                    <a href="#">
+                        <span>HUBLOT BIG BANG E</span>
+                    </a>
+                    <div class="container_lastnew_main2_line"></div>
+                    <div class="container_lastnew_main2_span">
+                        <span>Hublot first released the Big Bang in 2005.<br>
+                            Since then, this model has come to embody<br>
+                            Swiss watchmaking in the third millennium.<br>
+                            In 2018, the first connected version of the <br>
+                            Bang made its debut. And now, Hublot unveils<br>
+                            the Big Bang e. The new incarnation of the<br>
+                            brand's Art of Fusion ethos: a fusion between<br>
+                            tradition and innovation, cutting edge materials<br>
+                            and the latest digital technology.</span>
+                    </div>
+                </div>
+                <div class="container_lastnew_main3">
+                    <a href="#">
+                        <div class="container_lastnew_main3_main">
+                            <div class="container_lastnew_main3_main_top">
+                                <img src="imgs/hublot-profile-picture.png" alt="logo">
+                            </div>
+                            <div class="container_lastnew_main3_main_center">
+                                <span>@hublot</span>
+                            </div>
+                            <div class="container_lastnew_main3_main_bottom">
+                                <i style='font-size:1.5vw; color: #1949b5' class='fas'>&#xf0a3;</i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="container_lastnew_main3_span">
+                        <span>A beautiful day celebrating the launch of our<br>
+                            <a class="aa" href="#">#BigBangE</a> and<br>
+                            the Classic Fusion Aerofusion Chronograph Special<br>
+                            Edition<br>
+                            “Boutique Monaco”.<br>
+                            <a  class="aa" href="#">@marc.ferrero</a> <a  class="aa" href="#">#DidierDeschamps</a> <a href="#"  class="aa">@ricardoguadalupe</a><br>
+                            <a  class="aa" href="#">@hublot_monaco</a> <a href="#"  class="aa">#HublotMonaco</a> <a href="#"  class="aa">#HublotLovesArt</a></span>
+                    </div>
+                </div>
+            </div>
+            <!--ket thuc thẻ last new-->
+            <!--bắt đầu thẻ learmore-->
+            <div class="conten_learnmore">
+                <div class="conten_learnmore_left"><a href="#">learn more</a></div>
+                <div class="conten_learnmore_center"><a href="#">learn more</a></div>
+                <div class="conten_learnmore_right"><a href="#">view on instagram <i style="font-size:1vw" class="fa">&#xf045;</i></a></div>
+            </div>
+            <!--kết thúc thẻ learmore-->
+            <!--bắt đầu thẻ uppder-->
+            <div class="header_update">
+                <span class="header_update_span">KEEP ME UPDATED</span>
+                <div class="header_update_span2"><span>I want to stay up to date with the latest Hublot news.</span></div>
+                <div class="header_update_span3"><a href="#"><span>sign up</span></a></div>
+            </div>
+            <!--kết thúc thẻ uppder-->
+            <!--kết thúc thẻ fooder-->
+            <div class="fooder">
+                <div class="fooder_logo"></div>
+                <img class="fooder_logo_img" src="imgs/logohublot4.jpg" alt="logohublot" >
+                <div class="fooder_menu">
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">NEWSLETTER</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">jobs</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">PRESS</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">CONTACT US</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">SERVICES</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">TRACK AN ORDER</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">PRIVACY</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">LEGAL NOTICE & TERMS OF USE</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">WEBSITE TERMS AND CONDITIONS</a></div>
+                    <div class="fooder_menu_content"><a href="#" class="fooder_menu_content_a">MSA TRANSPARENCY</a></div>
+                </div>
+                <div class="fooder_language">
+                    <a href="#" class="fooder_language_link">
+                        <div class="fooder_language_english">
+                            <div class="fooder_language_english_span"><span class="fooder_language_span">english</span></div>
+                            <div class="fooder_language_english_icon"><i style=" color: red" class="fa" >&#xf107;</i></div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="fooder_language_vietnam">
+                            <div class="fooder_language_vietnam_span"><span class="fooder_language_span">viet nam</span></div>
+                            <div class="fooder_language_vietnam_icon"><i style=" color: red" class="fa">&#xf107;</i></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="fooder_icon">
+                    <div class="fooder_icon_link"><a href="#"><i style="color: #FFFFFF" class="fa">&#xf09a;</i></a></div>
+                    <div class="fooder_icon_link"><a href="#"><i style="color: #FFFFFF" class="fa">&#xf16d;</i></a></div>
+                    <div class="fooder_icon_link"><a href="#"><i style="color: #FFFFFF" class="fa">&#xf0d2;</i></a></div>
+                    <div class="fooder_icon_link"><a href="#"><i style="color: #FFFFFF" class="fa">&#xf099;</i></a></div>
+                    <div class="fooder_icon_link"><a href="#"><i style="color: #FFFFFF" class="fa">&#xf18a;</i></a></div>
+                    <div class="fooder_icon_link"><a href="#"><i style="color: #FFFFFF" class="fa">&#xf16a;</i></a></div>
+                </div>
+                <div class="fooder_fooder">
+                    <cite style="letter-spacing: 0.05vw">© 2020 Hublot - All intellectual property rights reserved</cite>
+                </div>
+        </div>
         </div>
         </body>
 </html>
