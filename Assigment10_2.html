@@ -34,10 +34,12 @@
                         <div id="arrow_minute"></div>
                         <div id="arrow_sec"></div>
                     </div>
-                    <button onclick="startClock();" >Start</button>
+                </div>
+                    <button onclick="startClock()";>Start</button>
         </div>
 <script type="text/javascript">
         function startClock() {
+            var hour=12;
             var min=59;
             var sec=59;
             let clock = setInterval(function () {
@@ -50,7 +52,11 @@
                     document.getElementById("arrow_minute").style.transformOrigin ="0% 0%";
                     sec=59;
                     if (min<0){
+                        hour--;
                         min=59;
+                        if (hour<0){
+                            clearInterval(clock);
+                        }
                     }
                 }
             },10)
