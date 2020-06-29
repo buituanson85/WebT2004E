@@ -115,23 +115,20 @@ img{
     width: 50px;
     height: 100px;
     padding-top: 30px;
-    position: relative;
-}
-
-.arrow_sec{
-
-}
-
-.fas{
-
-}
-
-.arrow_minute{
-    border: solid red;
-    border-width: 6px 0 0 0;
-    padding-right: 50px;
     position: absolute;
-    top: -15.5vw;
-    left: 15vw;
+    top: 12.5vw;
+    left: 14.5vw;
+}
+
+#arrow_sec{
+    border: solid red;
+    border-width: 2px 0 0 0;
+    padding-right: 150px;
+}
+
+#arrow_minute{
+    border: solid red;
+    border-width: 7px 0 0 0;
+    padding-right: 50px;
 }
 

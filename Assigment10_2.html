@@ -31,24 +31,31 @@
                         <circle cx="0.8vw" cy="0.8vw" r="0.5vw" stroke="black" stroke-width="3" fill="white" />
                     </svg>
                     <div class="arrow">
-                                <div > </div>
-                        <i onclick="startClock()" id="arrow_sec" style='font-size:36px' class='fas'>&#xf062;</i>
-                                <div class="arrow_minute" onclick="startClock()" id="arrow_minute"> </div>
-                     </div>
+                        <div id="arrow_minute"></div>
+                        <div id="arrow_sec"></div>
+                    </div>
+                    <button onclick="startClock();" >Start</button>
         </div>
 <script type="text/javascript">
     function startClock() {
-        let min=59;
-        let sec=59;
-        let clock = setInterval(function () {
-            document.getElementById("arrow_sec").style.transform= "rotate(6deg)";
-            sec--;
-            if ( sec<0 ){
-                document.getElementById("arrow_minute").style.transform= "rotate(6deg)";
-                sec=59;
-            }
-
-        },10)
+        var min=59;
+        var sec=59;
+        for (let i=0 ; i<1000 ; i++){
+            let clock = setInterval(function () {
+                document.getElementById("arrow_sec").style.transform = "rotate(6deg)";
+                document.getElementById("arrow_sec").style.transformOrigin ="0% 0%";
+                sec--;
+                if ( sec<0 ){
+                    min--;
+                    document.getElementById("arrow_minute").style.transform= "rotate(6deg)";
+                    document.getElementById("arrow_minute").style.transformOrigin ="0% 0%";
+                    sec=59;
+                    if (min<0){
+                        min=59;
+                    }
+                }
+            },10)
+        }
     }
 </script>
 </body>
