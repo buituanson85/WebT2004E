@@ -142,4 +142,15 @@ img{
     top: 21%;
     left: 48.5%;
 }
+.circle{
+    width: 1.5vw;
+    height: 1.5vw;
+    border: solid #171717;
+    background-color: #171717;
+    border-width: 2px;
+    border-radius: 50%;
+    position: absolute;
+    top: 49%;
+    left: 49%;
+}
 
