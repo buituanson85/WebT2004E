@@ -119,16 +119,24 @@ img{
     top: 12.5vw;
     left: 14.5vw;
 }
-
-#arrow_sec{
+.hand{
+    transform: rotate(270deg);
+    transform-origin: 0;
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 2.96, 1, 1);
+}
+.arrow_sec{
     border: solid red;
     border-width: 2px 0 0 0;
     padding-right: 150px;
+
 }
 
-#arrow_minute{
+.arrow_minute{
     border: solid red;
     border-width: 7px 0 0 0;
     padding-right: 50px;
+    transform: rotate(270deg);
+    transform-origin: 0 0;
 }
 

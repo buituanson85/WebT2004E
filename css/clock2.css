@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: GothamPro, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #cccccc;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+    font-size: 0.85vw; /*vw ko đổi hiển thị chữ khi zoom to nhỏ màn hình đi kèm với thẻ viewport*/
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    padding-top: 10vw;
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.clock{
+    border-radius: 50%;
+    border: 0.2vw solid #f64505;
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+
+}
+.clock:after{
+    content: "";
+    position: absolute;
+    background-color: #171717;
+    top: 49%;
+    left: 48.5%;
+    height: 11vw;
+    width: 0.3vw;
+    border-radius: 0.2px;
+    transform-origin: 0 0;
+    animation: grdAiguille 60s linear infinite;
+}
+
+@keyframes grdAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+.clock:before{
+    content: "";
+    position: absolute;
+    background-color: #171717;
+    top: 49%;
+    left: 48.5%;
+    height: 5vw;
+    width: 0.5vw;
+    border-radius: 0.2vw;
+    transform-origin: 0 0;
+    animation: ptAiguille 1440s linear infinite;
+}
+
+@keyframes ptAiguille{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+.number_one{
+    font-size: 2vw;
+    position: absolute;
+    top: 24.5%;
+    left: 56.5%;
+}
+.number_two{
+    font-size: 2vw;
+    position: absolute;
+    top: 36.5%;
+    left: 61.5%;
+}
+.number_three{
+    font-size: 2vw;
+    position: absolute;
+    top: 48%;
+    left: 63%;
+}
+.number_four{
+    font-size: 2vw;
+    position: absolute;
+    top: 62%;
+    left: 61%;
+}
+.number_five{
+    font-size: 2vw;
+    position: absolute;
+    top: 71%;
+    left: 56.5%;
+}
+.number_six{
+    font-size: 2vw;
+    position: absolute;
+    top: 75%;
+    left: 49%;
+}
+
+.number_seven{
+    font-size: 2vw;
+    position: absolute;
+    top: 71%;
+    left: 42%;
+}
+.number_eight{
+    font-size: 2vw;
+    position: absolute;
+    top: 62%;
+    left: 38%;
+}
+.number_nine{
+    font-size: 2vw;
+    position: absolute;
+    top: 48%;
+    left: 36%;
+}
+.number_ten{
+    font-size: 2vw;
+    position: absolute;
+    top: 36.5%;
+    left: 37%;
+}
+.number_eleven{
+    font-size: 2vw;
+    position: absolute;
+    top: 24.5%;
+    left: 42%;
+}
+.number_twelve{
+    font-size: 2vw;
+    position: absolute;
+    top: 21%;
+    left: 48.5%;
+}
+
