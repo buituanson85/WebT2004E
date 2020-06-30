@@ -10,33 +10,23 @@
     <link rel="stylesheet" type="text/css" href="css/As10_2.css" >
 </head>
 <body>
-        <div class="container">
-                <div class="container_main">
-                    <svg class="circle" >
-                        <circle cx="15vw" cy="15vw" r="12vw" stroke="black" stroke-width="3" fill="white" />
-                    </svg>
-                    <span class="one">1</span>
-                    <span class="two">2</span>
-                    <span class="three">3</span>
-                    <span class="four">4</span>
-                    <span class="five">5</span>
-                    <span class="six">6</span>
-                    <span class="seven">7</span>
-                    <span class="eight">8</span>
-                    <span class="nine">9</span>
-                    <span class="ten">10</span>
-                    <span class="eleven">11</span>
-                    <span class="twelve">12</span>
-                    <svg class="circle_main" >
-                        <circle cx="0.8vw" cy="0.8vw" r="0.5vw" stroke="black" stroke-width="3" fill="white" />
-                    </svg>
-                    <div class="arrow">
-                        <div class="hand arrow_minute"></div>
-                        <div class="hand arrow_sec"></div>
-                    </div>
-                </div>
-                    <button onclick="startClock()";>Start</button>
-        </div>
+<div class="container">
+    <div class="clock" ></div>
+    <p class="number_one">1</p>
+    <p class="number_two">2</p>
+    <p class="number_three">3</p>
+    <p class="number_four">4</p>
+    <p class="number_five">5</p>
+    <p class="number_six">6</p>
+    <p class="number_seven">7</p>
+    <p class="number_eight">8</p>
+    <p class="number_nine">9</p>
+    <p class="number_ten">10</p>
+    <p class="number_eleven">11</p>
+    <p class="number_twelve">12</p>
+    <p class="circle"> </p>
+</div>
+
 <script type="text/javascript">
     // var secHand = document.getElementsByClassName("arrow_sec");
     // function setHand() {
@@ -89,17 +79,17 @@
         // }
 
 
-    function startClock() {
-             setInterval(function (e) {
-                 document.getElementById("arrow_sec").style.transform = "rotate("+(e*6)+"deg)";
-                 document.getElementById("arrow_sec").style.transformOrigin ="0% 0%";
-             },1000)
-    ``
-             setInterval(function (e) {
-                 document.getElementById("arrow_minute").style.transform = "rotate("+(e*6)+"deg)";
-                 document.getElementById("arrow_minute").style.transformOrigin ="0% 0%";
-             },60000)
-    }
+    // function startClock() {
+    //          setInterval(function (e) {
+    //              document.getElementById("arrow_sec").style.transform = "rotate("+(e*6)+"deg)";
+    //              document.getElementById("arrow_sec").style.transformOrigin ="0% 0%";
+    //          },1000)
+    // ``
+    //          setInterval(function (e) {
+    //              document.getElementById("arrow_minute").style.transform = "rotate("+(e*6)+"deg)";
+    //              document.getElementById("arrow_minute").style.transformOrigin ="0% 0%";
+    //          },60000)
+    // }
 </script>
 </body>
 </html>
