@@ -184,7 +184,6 @@ img{
     height: 11vw;
     width: 0.3vw;
     border-radius: 0.2px;
-    transform-origin: 0 0;
     animation: grdAiguille 60s linear infinite;
 }
 

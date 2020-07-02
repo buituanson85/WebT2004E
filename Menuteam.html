@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/menuteam.css">
+</head>
+<body>
+<div class="header">
+    <div class="header_left">
+        <div class="header_menu">
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="closebtn" id="closebtn" onclick="closeNav()">&times;</a>
+            <span class="header_menu_span" id="header_menu_span"  style="font-size:3vw;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <script>
+                function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                    document.getElementById("header_menu_span").style.display = "none";
+                    document.getElementById("closebtn").style.display = "block";
+                }
+
+                function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                    document.getElementById("closebtn").style.display = "none";
+                    document.getElementById("header_menu_span").style.display = "block";
+                }
+            </script>
+        </div>
+        <div class="header_left_logo">
+            <a href="#"><img src="imgs/logoHublot.jpg" alt="logo"></a>
+        </div>
+        <div class="header_left_name">
+            <div class="header_left_watches"><a href="#"><span class="header_left_name_span">watches</span></a></div>
+            <div class="header_left_ourworld"><a href="#"><span class="header_left_name_span">our world</span></a></div>
+            <div class="header_left_boutiques"><a href="#"><span class="header_left_name_span">boutiques</span></a></div>
+        </div>
+    </div>
+    <div class="header_right">
+        <div class="header_right_hub"><a href="#">hublotista</a></div>
+        <div class="header_right_icon1"><a href="#"><i class="fa">&#xf08a;</i></a></div>
+        <div class="header_right_icon2"><a href="#"><i  class='fas'>&#xf002;</i></a></div>
+        <div class="header_right_icon3"><a href="#"><i  class="fa">&#xf290;</i></a></div>
+    </div>
+</div>
+</body>
+</html>

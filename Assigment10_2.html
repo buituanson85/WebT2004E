@@ -28,6 +28,15 @@
 </div>
 
 <script type="text/javascript">
+    var min_deg = 0;
+    var hour_deg = 0;
+    setInterval(function () {
+        document.getElementById("min-arrow").style.transform="rotate("+min_deg+"deg)";
+        min_deg+=6;
+        if (min_deg>=360){
+            min_deg=0;
+        }
+    },60000);
     // var secHand = document.getElementsByClassName("arrow_sec");
     // function setHand() {
     //     var sec =
@@ -81,7 +90,7 @@
 
     // function startClock() {
     //          setInterval(function (e) {
-    //              document.getElementById("arrow_sec").style.transform = "rotate("+(e*6)+"deg)";
+    //              document.getElementById("arrow_sec").style.transform = "rotate("+(e+6)+"deg)";
     //              document.getElementById("arrow_sec").style.transformOrigin ="0% 0%";
     //          },1000)
     // ``

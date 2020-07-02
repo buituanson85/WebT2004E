@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
+<body>
+      <ul class="menu">
+          <li>
+              <a href="#">Home</a>
+          </li>
+          <li>
+              <a href="#">Products</a>
+              <ul class="submenu">
+                  <li>Iphon 11</li>
+                  <li>samsung s12</li>
+                  <li>nokia 110i</li>
+                  <li>blackbery</li>
+              </ul>
+          </li>
+          <li>
+              <a href="#">setting</a>
+              <ul class="submenu">
+                  <li>Iphon 11</li>
+                  <li>samsung s12</li>
+                  <li>nokia 110i</li>
+                  <li>blackbery</li>
+              </ul>
+          </li>
+      </ul>
+<script type="text/javascript" src="js/jqury.js"></script>
+      <script type="text/javascript" >
+          // $(".menu > li").bind("mouseenter",function () {
+          //       $(".submenu").slideDown();
+          // })
+          // $(".menu > li").bind("mouseleave",function () {
+          //     $(".submenu").hide();
+          // })
+          $(".menu > li").bind("mouseenter",function () {
+              $(".submenu").hide();
+              $(this).children(".submenu").slideDown();
+          })
+          $(".menu > li").bind("mouseleave",function () {
+              $(".submenu").hide();
+          })
+      </script>
+</body>
+</html>

@@ -12,25 +12,97 @@
         <body>
         <div class="container">
             <!-- bắt đầu the header-->
-            <div class="header">
-                <div class="header_left">
-                    <div class="header_menu">
-                        <a href="#"><i style="font-size:2.4vw" class="fa">&#xf0c9;</i></a>
+            <div class="header_container">
+                <div class="header" id="header">
+                    <div class="header_left">
+                        <div class="header_menu">
+                            <div class="burger" id="burge" onclick="Auto()">
+                                <div class="burger__patty"></div>
+                                <div class="burger__patty"></div>
+                                <div class="burger__patty"></div>
+                            </div>
+
+                            <nav class="menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a href="#" class="menu__link watches">Watches</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link ourworld">Our World</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link Boutiques">Boutiques</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link CART"><i  class="fa">&#xf290;</i>&nbsp&nbsp&nbspCART</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link HUBLOTISTA"><i style="font-size:1vw" class="fa">&#xf045;</i>&nbsp&nbsp&nbspHUBLOTISTA<i style="font-size:1vw" class="fa">&#xf045;</i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <script type="text/javascript">
+                            (function() {
+
+                                var Menu = (function() {
+                                    var burger = document.querySelector('.burger');
+                                    var menu = document.querySelector('.menu');
+                                    var menuList = document.querySelector('.menu__list');
+                                    var menuItems = document.querySelectorAll('.menu__item');
+
+                                    var active = false;
+
+                                    var toggleMenu = function() {
+                                        if (!active) {
+                                            menu.classList.add('menu--active');
+                                            menuList.classList.add('menu__list--active');
+                                            burger.classList.add('burger--close');
+                                            for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                                                menuItems[i].classList.add('menu__item--active');
+                                            }
+
+                                            active = true;
+                                        } else {
+                                            menu.classList.remove('menu--active');
+                                            menuList.classList.remove('menu__list--active');
+                                            burger.classList.remove('burger--close');
+                                            for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                                                menuItems[i].classList.remove('menu__item--active');
+                                            }
+
+                                            active = false;
+                                        }
+                                    };
+
+                                    var bindActions = function() {
+                                        burger.addEventListener('click', toggleMenu, false);
+                                    };
+
+                                    var init = function() {
+                                        bindActions();
+                                    };
+
+                                    return {
+                                        init: init
+                                    };
+
+                                }());
+
+                                Menu.init();
+
+                            }());
+                            function Auto() {
+                                document.getElementById("header").style.position = "fixed";
+                                document.getElementById("header").style.opacity = "3";
+                                document.getElementById("header").style.zIndex = "20";
+                            }
+                        </script>
+                        <div class="header_left_logo">
+                            <a href="#"><img src="imgs/logoHublot.jpg" alt="logo"></a>
+                        </div>
+                        <div class="header_left_name">
+                            <div class="header_left_watches"><a href="#"><span class="header_left_name_span">watches</span></a></div>
+                            <div class="header_left_ourworld"><a href="#"><span class="header_left_name_span">our world</span></a></div>
+                            <div class="header_left_boutiques"><a href="#"><span class="header_left_name_span">boutiques</span></a></div>
+                        </div>
                     </div>
-                    <div class="header_left_logo">
-                        <a href="#"><img src="imgs/logoHublot.jpg" alt="logo"></a>
+                    <div class="header_right">
+                        <div class="header_right_hub"><a href="#" class="header_right_hub_hublotista" id="header_right_hub_hublotista">hublotista&nbsp&nbsp<i onclick="focus()" style="font-size:1vw" class="fa" id="fa">&#xf045;</i></a></div>
+                        <div class="header_right_icon1"><a href="#"><i class="fa">&#xf08a;</i></a></div>
+                        <div class="header_right_icon2"><a href="#"><i  class='fas'>&#xf002;</i></a></div>
+                        <div class="header_right_icon3"><a href="#"><i  class="fa">&#xf290;</i></a></div>
                     </div>
-                    <div class="header_left_name">
-                        <div class="header_left_watches"><a href="#"><span class="header_left_name_span">watches</span></a></div>
-                        <div class="header_left_ourworld"><a href="#"><span class="header_left_name_span">our world</span></a></div>
-                        <div class="header_left_boutiques"><a href="#"><span class="header_left_name_span">boutiques</span></a></div>
-                    </div>
-                </div>
-                <div class="header_right">
-                    <div class="header_right_hub"><a href="#">hublotista</a></div>
-                    <div class="header_right_icon1"><a href="#"><i class="fa">&#xf08a;</i></a></div>
-                    <div class="header_right_icon2"><a href="#"><i  class='fas'>&#xf002;</i></a></div>
-                    <div class="header_right_icon3"><a href="#"><i  class="fa">&#xf290;</i></a></div>
                 </div>
             </div>
             <!-- kết thúc the header-->

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jqury.js" type="text/javascript"></script>
+</head>
+<body>
+<!--query 1 tập hợp các hàm có sẵn đói tượng jquery-->
+<p class="pp">Doan van so 1</p>
+<p class="pp">Doan van so 2</p>
+<p class="pp">Doan van so 3</p>
+<ul>
+    <li>Mi tom</li>
+    <li>Banh my</li>
+    <li>Xoi xeo</li>
+    <li>Cơm gà</li>
+</ul>
+<button onclick="Open()">Open</button>
+<button onclick="Close()">close</button>
+<button onclick="Auto()">Auto</button>
+<button class="move">Move</button>
+<script type="text/javascript">
+    // let px=$("p.pp");
+    // px.css("color","red");
+    $("p.pp").css("color","red");
+    $("ul > li:first-child").css("color","green");
+    $("ul li:first-child").next().css("color","orange");
+    $("ul li:first-child").next().next().css("color","red");
+    $("ul li:first-child").parent().css("background-color","yellow");
+    $("ul > li:first-child").css({
+        "color":"blue",
+        "backgroud-color":"gray"
+    });
+    let txt = $("ul li:first-child").text();
+    $("ul li:first-child").text("day la noi dung moi")
+    $("ul li:first-child").text($("ul li:first-child").text()+"Trung");
+    $("ul li:first-child").html("<h1>Bánh mỳ chứng</h1>");
+    $("ul li:first-child").addClass("active");
+    function Open() {
+        // $("ul").show();
+        // $("ul").fadeIn();
+        // $("ul").slideDown();
+    }
+    function Close() {
+        // $("ul").hide();
+        // $("ul").fadeOut(1000);
+        // $("ul").slideUp(1000);
+    }
+    function Auto() {
+        // $("ul").toggle();
+        // $("ul").slideToggle();
+        $("ul").fadeToggle();
+    }
+    function Move() {
+        $("ul").animate({
+            "margin-left":"200px"
+        },500);
+    }
+
+    // function Move() {
+    //    if ($("ul").hasClass("active")){
+    //        $("ul").animate({
+    //            "margin-left":"0";
+    //        })
+    //    }
+    //     },500);
+    // }
+    $(".list").bind("mouseenter",function () {
+
+    })
+</script>
+</body>
+</html>

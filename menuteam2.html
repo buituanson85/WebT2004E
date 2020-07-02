@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/menuteam2.css">
+</head>
+<body>
+<div class="header">
+    <div class="burger">
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+        <div class="burger__patty"></div>
+    </div>
+
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="https://sedgebrook.ca-staging.co.uk/r7/" class="menu__link">Residence 7 Collection</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Residence 9 Collection</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Our Process</a></li>
+            <li class="menu__item"><a href="" class="menu__link">About Us</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Contact Us</a></li>
+            <i class="fa fa-dribbble"></i>
+            </li>
+        </ul>
+        <div class="menu__brand">
+            <img class="logo" src="https://sedgebrook.ca-staging.co.uk/wp-content/uploads/2018/10/Screen-Shot-2018-10-08-at-12.32.31.png">
+        </div>
+    </nav>
+</div>
+<script type="text/javascript">
+    (function() {
+
+        var Menu = (function() {
+            var burger = document.querySelector('.burger');
+            var menu = document.querySelector('.menu');
+            var menuList = document.querySelector('.menu__list');
+            var brand = document.querySelector('.menu__brand');
+            var menuItems = document.querySelectorAll('.menu__item');
+
+            var active = false;
+
+            var toggleMenu = function() {
+                if (!active) {
+                    menu.classList.add('menu--active');
+                    menuList.classList.add('menu__list--active');
+                    brand.classList.add('menu__brand--active');
+                    burger.classList.add('burger--close');
+                    for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                        menuItems[i].classList.add('menu__item--active');
+                    }
+
+                    active = true;
+                } else {
+                    menu.classList.remove('menu--active');
+                    menuList.classList.remove('menu__list--active');
+                    brand.classList.remove('menu__brand--active');
+                    burger.classList.remove('burger--close');
+                    for (var i = 0, ii = menuItems.length; i < ii; i++) {
+                        menuItems[i].classList.remove('menu__item--active');
+                    }
+
+                    active = false;
+                }
+            };
+
+            var bindActions = function() {
+                burger.addEventListener('click', toggleMenu, false);
+            };
+
+            var init = function() {
+                bindActions();
+            };
+
+            return {
+                init: init
+            };
+
+        }());
+
+        Menu.init();
+
+    }());
+</script>
+</body>
+</html>
