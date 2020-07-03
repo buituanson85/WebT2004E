@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: GothamPro, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.1vw;
+    word-spacing: 0.1vw;
+    font-size: 0.85vw; /*vw ko đổi hiển thị chữ khi zoom to nhỏ màn hình đi kèm với thẻ viewport*/
+}
+
+a{
+    text-decoration: none;
+    color: #333333;
+}
+img{
+    max-width: 100%;
+}
+.section{
+    background-color: #171717;
+    height: 1000vw;
+}
+.container{
+    padding: 20px 15px 15px 15px;
+    background-color: #FFFFFF;
+}
+.row{
+    display: flex;
+}
+.col-md-9{
+
+}
+.col-md-3{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.top.col-md-12{
+    height: 15%;
+    background-color: #facdbc;
+}
+.top.col-md-12 span{
+    font-size: 26px;
+    color: #FFFFFF;
+}
+.center.col-md-12{
+    height: 30%;
+    background-color: #e84e16;
+}
+.center.col-md-12 span{
+    margin-top: 30px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+.bottom.col-md-12{
+    height: 55%;
+}
+.header{
+    display: flex;
+}
+.col-md-4{
+    height: 150px;
+}
+.col-md-4.left{
+    position: relative;
+}
+.fooder.col-md-12{
+    height: 40px;
+    background-color: #facdbc;
+}
+.main_left{
+    position: absolute;
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.col-md-4.right{
+    background-color: #facdbc;
+    margin: 0 15px;
+}
+.main_center{
+    position: absolute;
+    color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main_right{
+    color: #FFFFFF;
+    ;
+}
+.fooder{
+    color: #FFFFFF;
+}
+
+
+
